@@ -685,7 +685,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BwBgXPJy.mjs').then((m) => m.default || m)
+    component: () => import('./index-BgYtrBti.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1707,7 +1707,7 @@ const plugins = [
   primevue_plugin_egKpok8Auk
 ];
 const layouts = {
-  default: () => import('./default-BBcUpBcg.mjs').then((m) => m.default || m)
+  default: () => import('./default-BpFYTeSs.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
