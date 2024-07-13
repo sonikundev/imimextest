@@ -4437,15 +4437,82 @@ body {
   opacity: 0.2;
 }
 
-.controlInstrumentacion{
-  height: 50px;
+.secondBannerTitle{
+	font-size: 40px;
+}
+
+//Responsive
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.circleFondo {
+  height: 100px;
+  transition: ease 1s;
+  display: none;
+}
+
+.firstBannerTitle{
+	font-weight: bolder; 
+	font-size: 50px;
+}
+
+.firstBannerSubTitle{
+	font-size: 20px; 
+	color: gray; 
+	font-weight: 100;
+}
+
+.firstBannerSubTitle2{
+	font-size: 15px; 
+	color: gray; 
+	font-weight: 100;
 }
 
 .firstBannerNuestrosServicios {
 	position: relative;
 	z-index: 1;
 	background-color: transparent; 
-	padding: 20px;
+	padding: 0px;
+	font-size: 25px;
+}
+
+.controlInstrumentacion{
+  height: 30px;
+}
+
+.consultoriaSoftware{
+  font-size: 20px;
+}
+
+.containerNuestrosServicios{
+	height: 80px;
+}
+
+.consultoriaCard{
+	width: 100%; overflow: hidden;
+	height: 100%;
+}
+
+.titleCard{
+font-size: 20px;
+}
+
+.infoCard{
+font-size: 14px;
+}
+
+.softwarePropietarioCard{
+	height: 18rem;
+}
+
+.
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.circleFondo {
+  height: 100px;
+  transition: ease 1s;
 }
 
 .firstBannerTitle{
@@ -4465,25 +4532,41 @@ body {
 	font-weight: 100;
 }
 
-.secondBannerTitle{
-	font-size: 40px;
+.firstBannerNuestrosServicios {
+	position: relative;
+	z-index: 1;
+	background-color: transparent; 
+	padding: 20px;
+	font-size: 70px;
 }
 
-//Responsive
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-.circleFondo {
-  height: 100px;
-  transition: ease 1s;
+.controlInstrumentacion{
+  height: 50px;
 }
 
+.consultoriaSoftware{
+  font-size: 40px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-.circleFondo {
-  height: 100px;
-  transition: ease 1s;
+.containerNuestrosServicios{
+	height: 200px;
+}
+
+.consultoriaCard{
+	width: 25rem; overflow: hidden;
+	height: 100%;
+}
+
+.titleCard{
+font-size: 20px;
+}
+
+.infoCard{
+font-size: 16px;
+}
+
+.softwarePropietarioCard{
+	height: 18rem;
 }
 
 }
@@ -4493,6 +4576,61 @@ body {
 .circleFondo {
   height: 450px;
   transition: ease 1s;
+  display: block;
+}
+
+.firstBannerTitle{
+	font-weight: bolder; 
+	font-size: 70px;
+}
+
+.firstBannerSubTitle{
+	font-size: 30px; 
+	color: gray; 
+	font-weight: 100;
+}
+
+.firstBannerSubTitle2{
+	font-size: 20px; 
+	color: gray; 
+	font-weight: 100;
+}
+
+.firstBannerNuestrosServicios {
+	position: relative;
+	z-index: 1;
+	background-color: transparent; 
+	padding: 20px;
+	font-size: 70px;
+}
+
+.controlInstrumentacion{
+  height: 50px;
+}
+
+.consultoriaSoftware{
+  font-size: 40px;
+}
+
+.containerNuestrosServicios{
+	height: 200px;
+}
+
+.consultoriaCard{
+	width: 25rem; overflow: hidden;
+	height: 100%;
+}
+
+.titleCard{
+font-size: 20px;
+}
+
+.infoCard{
+font-size: 16px;
+}
+
+.softwarePropietarioCard{
+	height: 18rem;
 }
 
 }
@@ -4502,6 +4640,61 @@ body {
 .circleFondo {
   height: 450px;
   transition: ease 1s;
+  display: block;
+}
+
+.firstBannerTitle{
+	font-weight: bolder; 
+	font-size: 70px;
+}
+
+.firstBannerSubTitle{
+	font-size: 30px; 
+	color: gray; 
+	font-weight: 100;
+}
+
+.firstBannerSubTitle2{
+	font-size: 20px; 
+	color: gray; 
+	font-weight: 100;
+}
+
+.firstBannerNuestrosServicios {
+	position: relative;
+	z-index: 1;
+	background-color: transparent; 
+	padding: 20px;
+	font-size: 70px;
+}
+
+.controlInstrumentacion{
+  height: 50px;
+}
+
+.consultoriaSoftware{
+  font-size: 40px;
+}
+
+.containerNuestrosServicios{
+	height: 200px;
+}
+
+.consultoriaCard{
+	width: 25rem; overflow: hidden;
+	height: 100%;
+}
+
+.titleCard{
+font-size: 20px;
+}
+
+.infoCard{
+font-size: 16px;
+}
+
+.softwarePropietarioCard{
+	height: 18rem;
 }
 
 }
@@ -4511,6 +4704,61 @@ body {
 .circleFondo {
   height: 450px;
   transition: ease 1s;
+  display: block;
+}
+
+.firstBannerTitle{
+	font-weight: bolder; 
+	font-size: 70px;
+}
+
+.firstBannerSubTitle{
+	font-size: 30px; 
+	color: gray; 
+	font-weight: 100;
+}
+
+.firstBannerSubTitle2{
+	font-size: 20px; 
+	color: gray; 
+	font-weight: 100;
+}
+
+.firstBannerNuestrosServicios {
+	position: relative;
+	z-index: 1;
+	background-color: transparent; 
+	padding: 20px;
+	font-size: 70px;
+}
+
+.controlInstrumentacion{
+  height: 50px;
+}
+
+.consultoriaSoftware{
+  font-size: 40px;
+}
+
+.containerNuestrosServicios{
+	height: 200px;
+}
+
+.consultoriaCard{
+	width: 25rem; overflow: hidden;
+	height: 27rem;
+}
+
+.titleCard{
+ font-size: 20px;
+}
+
+.infoCard{
+ font-size: 16px;
+}
+
+.softwarePropietarioCard{
+	height: 18rem;
 }
 
 }

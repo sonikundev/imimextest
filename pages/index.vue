@@ -14,6 +14,8 @@
         <p class="firstBannerSubTitle2">
           -imimex
         </p>
+
+        <Button label="Contáctanos" severity="info" raised />
     </div>
 
     <div class="col-12 sm:col-12 md:col-6 lg:col-6 xl:col-6 flex align-items-center justify-content-center">
@@ -90,10 +92,10 @@
      <!-- First Banner  -->
 
     <!-- Nuestros Servicios  -->
-    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex" style="height: 200px">
+    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex containerNuestrosServicios">
 
         <div class="firstBannerNuestrosServicios">
-            <p style="font-size: 70px;">Nuestros Servicios</p>
+            <p>Nuestros Servicios</p>
         </div> 
 
         <div class="fondoSoftware flex">
@@ -306,55 +308,8 @@
     </div>
     <!-- Nuestros Servicios  -->
 
-    <!-- Control & Instrumentacion -->
-    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12" style="padding: 0px">
-      <Card style="width: 100%;">
-        <template #content>
-          <div class="grid">
-            <div class="col-12 flex align-items-center justify-content-center" style="padding: 0px">
-                
-                <i class="pi pi-spin pi-cog mr-2" style="font-size: 2.4rem"></i>
-
-                <p class="secondBannerTitle">
-                  Control & Instrumentación
-                </p>
-            </div>
-
-        <div class="col-12" style="padding:0px">
-          <div class="card">
-            <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="6000">
-                <template #item="slotProps">
-                    <Card style="width: 25rem; overflow: hidden">
-                    <template #header>
-                        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
-                    </template>
-                    <template #title>Proyecto</template>
-                    <template #subtitle>Descripción</template>
-                    <template #content>
-                        <p class="m-0">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur iure iste, reprehenderit aliquam aperiam doloribus nostrum quibusdam, accusamus adipisci similique, soluta dolores vitae dolorem deserunt eaque odit excepturi. Maxime?
-                        </p>
-                    </template>
-                    <template #footer>
-                        <div class="flex gap-4 mt-1">
-                            <Button label="Más información" class="w-full" />
-                        </div>
-                    </template>
-                </Card>
-                </template>
-            </Carousel>
-          </div>
-        </div>
-
-      </div>
-        </template>
-      </Card>
-      
-    </div>
-    <!-- Control & Instrumentacion -->
-
     <!-- Servicios de Software -->
-    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12" style="padding: 0px">
+    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 mb-1" style="padding: 0px">
       <Card style="width: 100%;">
         <template #content>
           <div class="grid">
@@ -387,38 +342,79 @@
                     </svg>
                 </p>
                 
-                <p style="font-size: 40px;">
+                <p class="consultoriaSoftware">
                     Consultoria en Desarrollo de Software
                 </p>
             </div>
 
-        <div class="col-12" style="padding:0px">
-          <div class="card">
-            <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="6000">
-                <template #item="slotProps">
-                    <Card style="width: 25rem; overflow: hidden">
+            <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 my-1" style="padding:0px">
+            <div class="card">
+                <Card class="consultoriaCard">
                     <template #header>
                         <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
                     </template>
-                    <template #title>Proyecto</template>
-                    <template #subtitle>Descripción</template>
+                    <template #title>
+                        <span class="titleCard">
+                            <i class="pi pi-code pr-1"></i>
+                            Servicio de desarrollo a la medida
+                        </span>
+                    </template>
                     <template #content>
-                        <p class="m-0">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur iure iste, reprehenderit aliquam aperiam doloribus nostrum quibusdam, accusamus adipisci similique, soluta dolores vitae dolorem deserunt eaque odit excepturi. Maxime?
+                        <p class="m-0 infoCard">   
+                            El servicio de desarrollo a la medida crea software personalizado que se alinea con los objetivos y necesidades específicas de cada empresa para proporcionar una ventaja competitiva.
                         </p>
                     </template>
-                    <template #footer>
-                        <div class="flex gap-4 mt-1">
-                            <Button label="Más información" class="w-full" />
-                        </div>
+                </Card>
+            </div>
+            </div>
+
+            <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 my-1" style="padding:0px">
+            <div class="card">
+                <Card class="consultoriaCard">
+                    <template #header>
+                        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+                    </template>
+                    <template #title>
+                        <span class="titleCard">
+                            <i class="pi pi-clipboard pr-1"></i>
+                            Servicio de consultoría en software
+                        </span>
+                    </template>
+                    <template #content>
+                        <p class="m-0 infoCard">   
+                            El servicio de consultoría en software ofrece asesoramiento experto para optimizar, implementar y gestionar soluciones tecnológicas que mejoren la eficiencia y productividad de las empresas.
+                        </p>
                     </template>
                 </Card>
-                </template>
-            </Carousel>
-          </div>
-        </div>
+            </div>
+            </div>
 
-      </div>
+            <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 my-1" style="padding:0px">
+            <div class="card">
+                <Card class="consultoriaCard">
+                    <template #header>
+                        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+                    </template>
+                    <template #title>
+                        <span class="titleCard">
+                            <i class="pi pi-comments pr-1"></i>
+                            Servicio de soporte técnico y mesa de ayuda
+                        </span>
+                    </template>
+                    <template #content>
+                        <p class="m-0 infoCard">   
+                            El servicio de soporte técnico y mesa de ayuda proporciona asistencia especializada para resolver problemas técnicos, garantizar el funcionamiento continuo de sistemas y ofrecer soporte a los usuarios finales.
+                        </p>
+                    </template>
+                </Card>
+            </div>
+            </div>
+
+            <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex align-items-center justify-content-center">
+                <Button label="Más información" class="w-15rem" severity="info" raised/>
+            </div>
+
+        </div>
         </template>
       </Card>
       
@@ -459,38 +455,89 @@
                     </svg>
                 </p>
                 
-                <p style="font-size: 40px;">
+                <p class="consultoriaSoftware">
                     Software Propietario
                 </p>
             </div>
 
-        <div class="col-12" style="padding:0px">
-          <div class="card">
-            <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="6000">
-                <template #item="slotProps">
-                    <Card style="width: 25rem; overflow: hidden">
+            <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 my-1" style="padding:0px">
+            <div class="card">
+                <Card class="softwarePropietarioCard">
                     <template #header>
-                        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+                        <img alt="user header" src="../assets/img/skdocslogo.png" class="w-full"/>
                     </template>
-                    <template #title>Proyecto</template>
-                    <template #subtitle>Descripción</template>
+                    <template #title>
+                        <span class="titleCard">
+                            <i class="pi pi-code pr-1"></i>
+                            skdocs
+                        </span>
+                    </template>
+                    <template #subtitle>
+                        <span>
+                            Sector Administrativo
+                        </span>
+                    </template>
                     <template #content>
-                        <p class="m-0">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur iure iste, reprehenderit aliquam aperiam doloribus nostrum quibusdam, accusamus adipisci similique, soluta dolores vitae dolorem deserunt eaque odit excepturi. Maxime?
+                        <p class="m-0 infoCard">   
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam nulla inventore vero, quasi eum necessitatibus doloribus ab consectetur? Libero iure, id magnam quos adipisci alias amet omnis ea totam!
                         </p>
                     </template>
-                    <template #footer>
-                        <div class="flex gap-4 mt-1">
-                            <Button label="Más información" class="w-full" />
-                        </div>
+                </Card>
+            </div>
+            </div>
+
+            <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 my-1" style="padding:0px">
+            <div class="card">
+                <Card class="softwarePropietarioCard">
+                    <template #header>
+                        <img alt="user header" src="../assets/img/skterminallogo.png" class="w-full"/>
+                    </template>
+                    <template #title>
+                        <span class="titleCard">
+                            <i class="pi pi-code pr-1"></i>
+                            skterminal
+                        </span>
+                    </template>
+                    <template #subtitle>
+                        <span>
+                            Sector Industrial
+                        </span>
+                    </template>
+                    <template #content>
+                        <p class="m-0 infoCard">   
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam nulla inventore vero, quasi eum necessitatibus doloribus ab consectetur? Libero iure, id magnam quos adipisci alias amet omnis ea totam!
+                        </p>
                     </template>
                 </Card>
-                </template>
-            </Carousel>
-          </div>
-        </div>
+            </div>
+            </div>
 
-      </div>
+            <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 my-1" style="padding:0px">
+            <div class="card">
+                <Card class="softwarePropietarioCard">
+                    <template #header>
+                        <img alt="user header" src="../assets/img/skflightslogo.png"  class="w-full">
+                    </template>
+                    <template #title>
+                        <span class="titleCard">
+                            <i class="pi pi-code pr-1"></i>
+                            skflights
+                        </span>
+                    </template>
+                    <template #subtitle>
+                        <span>
+                            Sector Administrativo Aeroportuario
+                        </span>
+                    </template>
+                    <template #content>
+                        <p class="m-0 infoCard">   
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam nulla inventore vero, quasi eum necessitatibus doloribus ab consectetur? Libero iure, id magnam quos adipisci alias amet omnis ea totam!
+                        </p>
+                    </template>
+                </Card>
+            </div>
+            </div>
+          </div>
         </template>
       </Card>
       
@@ -507,7 +554,7 @@
                     
                 </p>
                 
-                <p style="font-size: 40px;">
+                <p class="consultoriaSoftware">
                     Testimonios
                 </p>
             </div>
@@ -516,7 +563,7 @@
           <div class="card">
             <Carousel :value="products" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="10000">
                 <template #item="slotProps">
-                    <Card style="width: 25rem; overflow: hidden">
+                    <Card style="width: 100%; overflow: hidden">
                     <template #header>
                    
                     </template>
@@ -551,10 +598,10 @@
     <!-- Testimonios -->
 
     <!-- Nuestros Clientes -->
-    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex" style="height: 200px">
+    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex containerNuestrosServicios">
 
     <div class="firstBanner">
-        <p style="font-size: 70px;">Nuestros Clientes</p>
+        <p class="firstBannerNuestrosServicios">Nuestros Clientes</p>
     </div> 
 
     <div class="fondoSoftware flex">
@@ -737,11 +784,11 @@
         <template #content>
           <div class="grid">
 
-            <div class="col-2 flex align-items-center justify-content-center" style="">
+            <div class="col-12 sm:col-12 md:col-12 lg:col-2 xl:col-2 flex align-items-center justify-content-center" style="">
                 <Image src="https://logodownload.org/wp-content/uploads/2018/06/pemex-logo.png" alt="Image" width="100" preview />
             </div>
 
-            <div class="col-2 flex align-items-center justify-content-center" style="">
+            <div class="col-12 sm:col-12 md:col-12 lg:col-2 xl:col-2 flex align-items-center justify-content-center" style="">
                 <Image src="https://4.bp.blogspot.com/-IGIk9K1sSLA/U432dqxhpkI/AAAAAAAABpY/VCFVvIu6xhw/s1600/Asa_logo.jpg" alt="Image" width="240" preview />
             </div>
 

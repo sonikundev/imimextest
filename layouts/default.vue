@@ -26,7 +26,7 @@
                     </a>
                 </template>
                 <template #end>
-                    <Button label="Contactanos" severity="info" raised />
+                    <Button label="Contáctanos" severity="info" raised />
                 </template>
             </Menubar>
         </div>
@@ -37,23 +37,26 @@
     </div>
 
     <div class="footer grid ">
+        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
+            <Button label="Contáctanos" severity="info" raised />
+        </div>
 
-        <div class="col-2">
+        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
             <span class="pi pi-map-marker"></span>
             Queretaro Mx.
         </div>
 
-        <div class="col-2">
+        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
             <span class="pi pi-envelope"></span>
             correoimimex@imimex.com
         </div>
 
-        <div class="col-2">
+        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
             <span class="pi pi-phone"></span>
             +52 4422 33 405
         </div>
 
-        <div class="col-6 flex align-items-center justify-content-end">
+        <div class="col-12 sm:col-12 md:col-6 lg:col-6 xl:col-6 flex align-items-center justify-content-end">
             <span class="pi pi-linkedin pr-5"></span>
         </div>
     </div>
