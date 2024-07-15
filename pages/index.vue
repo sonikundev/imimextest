@@ -464,7 +464,7 @@
             <div class="card">
                 <Card class="softwarePropietarioCard">
                     <template #header>
-                        <img alt="user header" src="../assets/img/skdocslogo.png" class="w-full"/>
+                        <img alt="user header" src="../assets/img/skdocslogo.png" class="skdocsImage"/>
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -490,7 +490,7 @@
             <div class="card">
                 <Card class="softwarePropietarioCard">
                     <template #header>
-                        <img alt="user header" src="../assets/img/skterminallogo.png" class="w-full"/>
+                        <img alt="user header" src="../assets/img/skterminallogo.png" class="skterminalImage"/>
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -516,7 +516,7 @@
             <div class="card">
                 <Card class="softwarePropietarioCard">
                     <template #header>
-                        <img alt="user header" src="../assets/img/skflightslogo.png"  class="w-full">
+                        <img alt="user header" src="../assets/img/skflightslogo.png"  class="skflightsImage">
                     </template>
                     <template #title>
                         <span class="titleCard">

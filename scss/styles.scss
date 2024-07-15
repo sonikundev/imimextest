@@ -4504,6 +4504,28 @@ font-size: 14px;
 	height: 18rem;
 }
 
+.skdocsImage{
+	padding-top: 10px;
+	width: 270px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skterminalImage{
+	width: 330px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skflightsImage{
+	width: 280px;	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -4565,6 +4587,28 @@ font-size: 16px;
 
 .softwarePropietarioCard{
 	height: 18rem;
+}
+
+.skdocsImage{
+	padding-top: 10px;
+	width: 270px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skterminalImage{
+	width: 330px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skflightsImage{
+	width: 280px;	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 }
@@ -4631,6 +4675,19 @@ font-size: 16px;
 	height: 18rem;
 }
 
+.skdocsImage{
+	padding-top: 10px;
+	width: 170px;
+}
+
+.skterminalImage{
+	width: 230px;
+}
+
+.skflightsImage{
+	width: 180px;	
+}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -4695,6 +4752,19 @@ font-size: 16px;
 	height: 18rem;
 }
 
+.skdocsImage{
+	padding-top: 10px;
+	width: 270px;
+}
+
+.skterminalImage{
+	width: 350px;
+}
+
+.skflightsImage{
+	width: 300px;	
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -4756,7 +4826,20 @@ font-size: 16px;
 }
 
 .softwarePropietarioCard{
-	height: 18rem;
+	height: 20rem;
+}
+
+.skdocsImage{
+	padding-top: 10px;
+	width: 370px;
+}
+
+.skterminalImage{
+	width: 450px;
+}
+
+.skflightsImage{
+	width: 400px;	
 }
 
 }

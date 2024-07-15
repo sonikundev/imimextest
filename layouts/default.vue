@@ -43,20 +43,20 @@
 
         <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
             <span class="pi pi-map-marker"></span>
-            Queretaro Mx.
+            Emilio Carranza 18, Santa Anita, Iztacalco, C.P. 08300, Ciudad de México.
         </div>
 
         <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
             <span class="pi pi-envelope"></span>
-            correoimimex@imimex.com
+            contacto@imimex.com
         </div>
 
         <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
             <span class="pi pi-phone"></span>
-            +52 4422 33 405
+            55 553 08 211
         </div>
 
-        <div class="col-12 sm:col-12 md:col-6 lg:col-6 xl:col-6 flex align-items-center justify-content-end">
+        <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 flex align-items-center justify-content-end">
             <span class="pi pi-linkedin pr-5"></span>
         </div>
     </div>
