@@ -26,7 +26,7 @@
                     </a>
                 </template>
                 <template #end>
-                    <Button label="Contáctanos" severity="info" raised />
+                    <buttonContacto/>
                 </template>
             </Menubar>
         </div>
@@ -38,7 +38,7 @@
 
     <div class="footer grid ">
         <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
-            <Button label="Contáctanos" severity="info" raised />
+            <buttonContacto/>
         </div>
 
         <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
@@ -67,6 +67,7 @@
 <script setup>
 import { ref } from "vue";
 import SvgImimexLogo from "../components/svg/imimexLogo.vue";
+import buttonContacto from "../components/buttonContacto.vue"
 
 const items = ref([
     {
@@ -76,10 +77,6 @@ const items = ref([
             {
                 label: 'Control e',
                 icon: 'pi pi-bolt',
-            },
-            {
-                label: 'Instrumentación',
-                icon: 'pi pi-th-large',
             },
             {
                 separator: true
@@ -111,6 +108,7 @@ const items = ref([
         to: '/contact' 
     }
 ]);
+
 
 </script>
 

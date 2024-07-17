@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Larsseit';
-    src: url('assets/font/Larsseit-Medium.otf') format('opentype');
+    src: url('public/assets/font/Larsseit-Medium.otf') format('opentype');
 }
 
 body {
@@ -4506,21 +4506,43 @@ font-size: 14px;
 
 .skdocsImage{
 	padding-top: 10px;
-	width: 270px;
+	width: 240px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .skterminalImage{
-	width: 330px;
+	width: 270px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .skflightsImage{
-	width: 280px;	
+	width: 240px;	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.undraw1{
+	width: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw2{
+	width: 255px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw3{
+	width: 205px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -4573,7 +4595,6 @@ font-size: 14px;
 }
 
 .consultoriaCard{
-	width: 25rem; overflow: hidden;
 	height: 100%;
 }
 
@@ -4610,6 +4631,28 @@ font-size: 16px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.undraw1{
+	width: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw2{
+	width: 255px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw3{
+	width: 205px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 }
 
@@ -4686,6 +4729,27 @@ font-size: 16px;
 
 .skflightsImage{
 	width: 180px;	
+}
+
+.undraw1{
+	width: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw2{
+	width: 235px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw3{
+	width: 175px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 }
@@ -4765,6 +4829,27 @@ font-size: 16px;
 	width: 300px;	
 }
 
+.undraw1{
+	width: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw2{
+	width: 235px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw3{
+	width: 175px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -4840,6 +4925,27 @@ font-size: 16px;
 
 .skflightsImage{
 	width: 400px;	
+}
+
+.undraw1{
+	width: 300px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw2{
+	width: 380px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.undraw3{
+	width: 310px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 }

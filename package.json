@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/seo": "^2.0.0-rc.15",
     "@primevue/themes": "^4.0.0",
     "nuxt": "^3.12.3",
     "primeflex": "^3.3.1",

@@ -15,7 +15,7 @@
           -imimex
         </p>
 
-        <Button label="Contáctanos" severity="info" raised />
+        <buttonContacto/>
     </div>
 
     <div class="col-12 sm:col-12 md:col-6 lg:col-6 xl:col-6 flex align-items-center justify-content-center">
@@ -351,7 +351,7 @@
             <div class="card">
                 <Card class="consultoriaCard">
                     <template #header>
-                        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+                        <img alt="user header" src="@/public/assets/img/undraw1.png" class="undraw1" />
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -372,7 +372,7 @@
             <div class="card">
                 <Card class="consultoriaCard">
                     <template #header>
-                        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+                        <img alt="user header" src="@/public/assets/img/undraw2.png" class="undraw2"  />
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -393,7 +393,7 @@
             <div class="card">
                 <Card class="consultoriaCard">
                     <template #header>
-                        <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
+                        <img alt="user header" src="@/public/assets/img/undraw3.png" class="undraw3" />
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -464,7 +464,7 @@
             <div class="card">
                 <Card class="softwarePropietarioCard">
                     <template #header>
-                        <img alt="user header" src="../assets/img/skdocslogo.png" class="skdocsImage"/>
+                        <img alt="user header" src="@/public/assets/img/skdocslogo.png" class="skdocsImage"/>
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -490,7 +490,7 @@
             <div class="card">
                 <Card class="softwarePropietarioCard">
                     <template #header>
-                        <img alt="user header" src="../assets/img/skterminallogo.png" class="skterminalImage"/>
+                        <img alt="user header" src="@/public/assets/img/skterminallogo.png" class="skterminalImage"/>
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -516,7 +516,7 @@
             <div class="card">
                 <Card class="softwarePropietarioCard">
                     <template #header>
-                        <img alt="user header" src="../assets/img/skflightslogo.png"  class="skflightsImage">
+                        <img alt="user header" src="@/public/assets/img/skflightslogo.png"  class="skflightsImage">
                     </template>
                     <template #title>
                         <span class="titleCard">
@@ -545,7 +545,7 @@
     <!-- Software Propietario -->
 
     <!-- Testimonios -->
-    <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12" style="padding: 0px">
+    <!-- <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 my-1" style="padding: 0px">
       <Card style="width: 100%;">
         <template #content>
           <div class="grid">
@@ -593,8 +593,7 @@
       </div>
         </template>
       </Card>
-      
-    </div>
+    </div> -->
     <!-- Testimonios -->
 
     <!-- Nuestros Clientes -->
@@ -804,6 +803,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import buttonContacto from "../components/buttonContacto.vue"
 
 const products = ref([
 {
