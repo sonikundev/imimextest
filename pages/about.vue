@@ -1,6 +1,6 @@
 <template>
     <div class="grid mx-3 fadein animation-duration-400 animation-iteration-1 mb-5">
-        <div class="col-8">
+        <div class="col-12 sm:col-12 md:col-8 lg:col-8 xl:col-8">
             <p style="color:#055c9f; font-size: 18px; height: 0px;">QUIENES SOMOS?</p>
             <p class="firstBannerTitle">Transformación Digital en la Industria: Innovación y Competitividad</p>
             <p style="font-size: 20px; color: gray; ">
@@ -13,11 +13,11 @@
             </p>
         </div>
 
-        <div class="col-4 flex align-items-center justify-content-center">
+        <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 flex align-items-center justify-content-center">
             <img alt="user header" src="@/public/assets/img/undraw4.png" class="undraw2"  />
         </div>
 
-        <div class="col-12">
+        <div class="col-12 sm:col-12 md:col-6 lg:col-6 xl:col-6">
             <p class="consultoriaSoftware">
                 <i class="pi pi-megaphone consultoriaSoftware" style="color: #055c9f"></i>
                 Nuestra Misión
@@ -36,7 +36,7 @@
             </p>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 sm:col-12 md:col-6 lg:col-6 xl:col-6">
             <p class="consultoriaSoftware">
                 <i class="pi pi-sparkles consultoriaSoftware" style="color: #055c9f"></i>
                 Nuestra Visión

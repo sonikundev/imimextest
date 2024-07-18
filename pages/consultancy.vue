@@ -1,6 +1,6 @@
 <template>
     <div class="grid mx-3 fadein animation-duration-400 animation-iteration-1 mb-5">
-        <div class="col-4">
+        <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4">
             <p class="consultoriaSoftware">
                 <i class="pi pi-address-book consultoriaSoftware" style="color: #055c9f"></i>
                 Consultoria
@@ -27,7 +27,7 @@
 
         </div>  
 
-        <div class="col-8 flex align-items-center justify-content-center">
+        <div class="col-12 sm:col-12 md:col-8 lg:col-8 xl:col-8 flex align-items-center justify-content-center">
             <img alt="user header" src="@/public/assets/img/undraw6.png" class="w-30rem" />
         </div>
 

@@ -355,7 +355,7 @@
                     </template>
                     <template #title>
                         <span class="titleCard">
-                            <i class="pi pi-code pr-1"></i>
+                            <i class="pi pi-briefcase pr-1"></i>
                             Servicio de desarrollo a la medida
                         </span>
                     </template>
@@ -427,35 +427,8 @@
         <template #content>
           <div class="grid">
             <div class="col-12 flex align-items-center justify-content-center" style="padding: 0px">
-                <p>
-                    <svg class="controlInstrumentacion" version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                    <rect fill="none" stroke="black" stroke-width="4" x="25" y="25" width="50" height="50">
-                    <animateTransform
-                        attributeName="transform"
-                        dur="1.5s"
-                        from="0 50 50"
-                        to="180 50 50"
-                        type="rotate"
-                        id="strokeBox"
-                        attributeType="XML"
-                        begin="rectBox.end"/>
-                    </rect>
-                    <rect x="27" y="27" fill="#black" width="46" height="50">
-                    <animate
-                        attributeName="height"
-                        dur="2.3s"
-                        attributeType="XML"
-                        from="50" 
-                        to="0"
-                        id="rectBox" 
-                        fill="freeze"
-                        begin="0s;strokeBox.end"/>
-                    </rect>
-                    </svg>
-                </p>
-                
                 <p class="consultoriaSoftware">
+                    <i class="pi pi-box consultoriaSoftware pr-2"></i>
                     Software Propietario
                 </p>
             </div>
@@ -479,7 +452,7 @@
                     </template>
                     <template #content>
                         <p class="m-0 infoCard">   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam nulla inventore vero, quasi eum necessitatibus doloribus ab consectetur? Libero iure, id magnam quos adipisci alias amet omnis ea totam!
+                            Con la administración de contratos de arrendamiento para locales de aeropuertos centraliza la gestión de arrendamientos, garantizando un control eficiente y preciso. Optimiza la gestión de contratos, pagos y renovaciones, mejorando la transparencia y productividad en todas tus operaciones.
                         </p>
                     </template>
                 </Card>
@@ -505,7 +478,7 @@
                     </template>
                     <template #content>
                         <p class="m-0 infoCard">   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam nulla inventore vero, quasi eum necessitatibus doloribus ab consectetur? Libero iure, id magnam quos adipisci alias amet omnis ea totam!
+                            Nuestro sistema de almacenamiento de derivados del petróleo optimiza la gestión de tanques en refinerías, garantizando un despacho eficiente y seguro. Centraliza la información de inventarios y monitorea en tiempo real, mejorando la precisión y la productividad en todas las operaciones.
                         </p>
                     </template>
                 </Card>
@@ -531,7 +504,7 @@
                     </template>
                     <template #content>
                         <p class="m-0 infoCard">   
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam nulla inventore vero, quasi eum necessitatibus doloribus ab consectetur? Libero iure, id magnam quos adipisci alias amet omnis ea totam!
+                            Optimiza la gestión aeroportuaria con nuestro sistema de itinerarios, centralizando la información de vuelos, pasajeros y logística para mejorar la coordinación y reducir tiempos de espera. Con soporte continuo y actualizaciones regulares, lleva tu aeropuerto al siguiente nivel de eficiencia y productividad.
                         </p>
                     </template>
                 </Card>
