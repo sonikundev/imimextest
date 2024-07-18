@@ -410,9 +410,9 @@
             </div>
             </div>
 
-            <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex align-items-center justify-content-center">
+            <!-- <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex align-items-center justify-content-center">
                 <Button label="Más información" class="w-15rem" severity="info" raised/>
-            </div>
+            </div> -->
 
         </div>
         </template>
@@ -784,11 +784,15 @@
           <div class="grid">
 
             <div class="col-12 sm:col-12 md:col-12 lg:col-2 xl:col-2 flex align-items-center justify-content-center" style="">
-                <Image src="https://logodownload.org/wp-content/uploads/2018/06/pemex-logo.png" alt="Image" width="100" preview />
+                <Image src="https://logodownload.org/wp-content/uploads/2018/06/pemex-logo.png" alt="Image" width="100" />
             </div>
 
             <div class="col-12 sm:col-12 md:col-12 lg:col-2 xl:col-2 flex align-items-center justify-content-center" style="">
-                <Image src="https://4.bp.blogspot.com/-IGIk9K1sSLA/U432dqxhpkI/AAAAAAAABpY/VCFVvIu6xhw/s1600/Asa_logo.jpg" alt="Image" width="240" preview />
+                <Image src="https://4.bp.blogspot.com/-IGIk9K1sSLA/U432dqxhpkI/AAAAAAAABpY/VCFVvIu6xhw/s1600/Asa_logo.jpg" alt="Image" width="240" />
+            </div>
+
+            <div class="col-12 sm:col-12 md:col-12 lg:col-2 xl:col-2 flex align-items-center justify-content-center" style="">
+                <Image src="/assets/img/controlalogo.png" alt="Image" width="140" />
             </div>
 
           </div>

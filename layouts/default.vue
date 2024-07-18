@@ -75,8 +75,9 @@ const items = ref([
         icon: 'pi pi-search',
         items: [
             {
-                label: 'Control e',
-                icon: 'pi pi-bolt',
+                label: 'Consultoria',
+                icon: 'pi pi-phone',
+                to: '/consultancy'
             },
             {
                 separator: true
@@ -86,12 +87,16 @@ const items = ref([
                 icon: 'pi pi-server',
                 items: [
                     {
-                        label: 'SK Terminal',
+                        label: 'skterminal',
                         icon: 'pi pi-qrcode',
                     },
                     {
-                        label: 'SK Docs',
+                        label: 'skdocs',
                         icon: 'pi pi-wallet',
+                    },
+                    {
+                        label: 'skflights',
+                        icon: 'pi pi-shopping-bag',
                     }
                 ]
             }
