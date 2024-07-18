@@ -10,7 +10,7 @@ declare module '#app' {
 }
 declare module '@unhead/schema' {
 
-  type PublicFiles = '/IMIMEX_Isotipo_Blanco.png' | '/favicon.ico' | '/assets/img/IMIMEX_Isotipo_Blanco.png' | '/assets/img/controlalogo.png' | '/assets/img/imi-logo.svg' | '/assets/img/skdocslogo.png' | '/assets/img/skflightslogo.png' | '/assets/img/skterminallogo.png' | '/assets/img/undraw1.png' | '/assets/img/undraw2.png' | '/assets/img/undraw3.png' | '/assets/img/undraw4.png' | '/assets/img/undraw5.png' | '/assets/img/undraw6.png' | '/assets/font/Larsseit-Medium.otf' | '/assets/font/Roboto-Regular.ttf' | (string & Record<never, never>)
+  type PublicFiles = '/IMIMEX_Isotipo_Blanco.png' | '/favicon.ico' | '/assets/font/Larsseit-Medium.otf' | '/assets/font/Roboto-Regular.ttf' | '/assets/img/IMIMEX_Isotipo_Blanco.png' | '/assets/img/controlalogo.png' | '/assets/img/imi-logo.svg' | '/assets/img/skdocslogo.png' | '/assets/img/skflightslogo.png' | '/assets/img/skterminallogo.png' | '/assets/img/undraw1.png' | '/assets/img/undraw2.png' | '/assets/img/undraw3.png' | '/assets/img/undraw4.png' | '/assets/img/undraw5.png' | '/assets/img/undraw6.png' | (string & Record<never, never>)
   type JsFiles = (string & Record<never, never>)
 
   interface SchemaAugmentations {

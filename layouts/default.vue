@@ -85,20 +85,20 @@ const items = ref([
             {
                 label: 'Software',
                 icon: 'pi pi-server',
-                items: [
-                    {
-                        label: 'skterminal',
-                        icon: 'pi pi-qrcode',
-                    },
-                    {
-                        label: 'skdocs',
-                        icon: 'pi pi-wallet',
-                    },
-                    {
-                        label: 'skflights',
-                        icon: 'pi pi-shopping-bag',
-                    }
-                ]
+                // items: [
+                //     {
+                //         label: 'skterminal',
+                //         icon: 'pi pi-qrcode',
+                //     },
+                //     {
+                //         label: 'skdocs',
+                //         icon: 'pi pi-wallet',
+                //     },
+                //     {
+                //         label: 'skflights',
+                //         icon: 'pi pi-shopping-bag',
+                //     }
+                // ]
             }
         ]
     },

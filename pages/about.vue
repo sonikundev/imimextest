@@ -2,7 +2,10 @@
     <div class="grid mx-3 fadein animation-duration-400 animation-iteration-1 mb-5">
         <div class="col-12 sm:col-12 md:col-8 lg:col-8 xl:col-8">
             <p style="color:#055c9f; font-size: 18px; height: 0px;">QUIENES SOMOS?</p>
-            <p class="firstBannerTitle">Transformación Digital en la Industria: Innovación y Competitividad</p>
+            <p class="consultoriaSoftware">
+                <i class="pi pi-chart-line consultoriaSoftware" style="color: #055c9f"></i>
+                Transformación Digital en la Industria: Innovación y Competitividad
+            </p>
             <p style="font-size: 20px; color: gray; ">
             En IMIMEX, nos especializamos en el desarrollo de software
             industrial y administrativo, brindando soluciones a la medida,
