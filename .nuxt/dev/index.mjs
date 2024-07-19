@@ -4965,7 +4965,7 @@ const _inlineRuntimeConfig = {
               }
             }
           },
-          "darkModeSelector": false
+          "darkModeSelector": "system"
         }
       },
       "components": [

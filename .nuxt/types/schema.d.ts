@@ -7903,7 +7903,7 @@ declare module 'nuxt/schema' {
                },
             },
 
-            darkModeSelector: boolean,
+            darkModeSelector: string,
          },
       },
 

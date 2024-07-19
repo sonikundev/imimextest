@@ -57,10 +57,19 @@
         </div>
 
         <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 flex align-items-center justify-content-end">
-            <span class="pi pi-linkedin pr-5"></span>
+            <a href="https://www.linkedin.com/company/imimex-mx/" class="">
+                <Button icon="pi pi-linkedin" text rounded  severity="secondary" class="button-whats"/>
+            </a>
         </div>
     </div>
 </div>
+
+<div class="fixed-whats">
+    <a href="https://wa.me/524425639924?text=Hola%20quiero%20más%20información" class="fixed-button">
+        <Button icon="pi pi-whatsapp" severity="success" rounded aria-label="Search" class="button-whats"/>
+    </a>
+</div>
+
 
 </template>
 
@@ -152,5 +161,13 @@ const items = ref([
 .backgroundContent {
   background-color: rgb(248, 248, 248);
 }
+
+
+::v-deep(.button-whats){
+	.p-button-icon{
+        font-size: 24px;
+    }
+}
+
 </style>
    
