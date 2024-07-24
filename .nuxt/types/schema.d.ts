@@ -130,48 +130,6 @@ declare module 'nuxt/schema' {
 
       cacheControl: string,
    },
-
-   "nuxt-og-image": {
-      version: string,
-
-      satoriOptions: any,
-
-      resvgOptions: any,
-
-      sharpOptions: any,
-
-      publicStoragePath: string,
-
-      defaults: {
-         emojis: string,
-
-         renderer: string,
-
-         component: string,
-
-         extension: string,
-
-         width: number,
-
-         height: number,
-
-         cacheMaxAgeSeconds: number,
-      },
-
-      debug: boolean,
-
-      baseCacheKey: string,
-
-      fonts: Array<{
-
-      }>,
-
-      hasNuxtIcon: boolean,
-
-      colorPreference: string,
-
-      isNuxtContentDocumentDriven: boolean,
-   },
   }
   interface PublicRuntimeConfig {
    primevue: {

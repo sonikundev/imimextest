@@ -3,6 +3,11 @@ import Aura from '@primevue/themes/aura';
 
 
 export default defineNuxtConfig({
+  site: {
+    url: 'https://www.imimex.com/'
+  },
+  ssr: false,
+  target: 'static',
   app: {
     head: {
       charset: 'utf-8',

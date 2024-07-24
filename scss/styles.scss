@@ -28,6 +28,20 @@ body {
     background-color: rgb(247, 247, 247);
  }
 
+.p-galleria-indicator-active .p-galleria-indicator-button {
+    background: #055c9f !important;
+}
+
+.firstwallpaper {
+	background-image: url("@/public/assets/img/wallpaper1.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
+  }
+
  //svg Animations
  // A Animations
 .a {
@@ -4415,15 +4429,7 @@ body {
 }
 
 .svg-container {
-  width: 300px;
-	svg {
-		stroke-width: 2;
-		fill-rule: evenodd;
-		stroke-linecap: round;
-		stroke-linejoin: round;
-		background: transparent;
-		fill: RGBA(16, 25, 40, 0);
-	}
+  width: 100%;
 }
 
 .fondoSoftware {
