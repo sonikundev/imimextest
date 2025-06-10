@@ -36,32 +36,58 @@
         </div>
     </div>
 
-    <div class="footer grid ">
-        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
-            <buttonContacto/>
-        </div>
-
-        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
-            <span class="pi pi-map-marker"></span>
-            Emilio Carranza 18, Santa Anita, Iztacalco, C.P. 08300, Ciudad de México.
-        </div>
-
-        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
-            <span class="pi pi-envelope"></span>
-            contacto@imimex.com
-        </div>
-
-        <div class="col-12 sm:col-12 md:col-2 lg:col-2 xl:col-2">
-            <span class="pi pi-phone"></span>
-            55 553 08 211
-        </div>
-
-        <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4 flex align-items-center justify-content-end">
-            <a href="https://www.linkedin.com/company/imimex-mx/" class="">
-                <Button icon="pi pi-linkedin" text rounded  severity="secondary" class="button-whats"/>
-            </a>
-        </div>
+  <div class="footer flex flex-wrap justify-content-between align-items-center">
+    
+    <!-- Botón de contacto -->
+    <div class="flex align-items-center">
+      <buttonContacto />
     </div>
+
+    <!-- LinkedIn -->
+    <div class="flex align-items-center justify-content-center">
+      <a 
+        href="https://www.linkedin.com/company/imimex-mx/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <Button icon="pi pi-linkedin" text rounded severity="secondary" class="button-whats" />
+      </a>
+    </div>
+
+    <!-- Dirección -->
+    <div class="flex align-items-center justify-content-center">
+      <i class="pi pi-map-marker mr-2"></i>
+      <span>Emilio Carranza 18, Santa Anita, Iztacalco, C.P. 08300, Ciudad de México.</span>
+    </div>
+
+    <!-- Correo -->
+    <div class="flex align-items-center justify-content-center">
+      <i class="pi pi-envelope mr-2"></i>
+      <button 
+        @click="enviarCorreo"
+        class="interactive-link bg-transparent border-none p-0 m-0 text-primary hover:underline"
+        style="font-size: 1rem;"
+      >
+        contacto@imimex.com
+      </button>
+    </div>
+
+    <!-- Teléfono -->
+    <div class="flex align-items-center justify-content-center">
+      <i class="pi pi-phone mr-2"></i>
+      <a 
+        href="https://wa.me/525555308211" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="interactive-link text-primary hover:underline"
+      >
+        (+52) 555 530 8211
+      </a>
+    </div>
+
+    
+  </div>
+
 </div>
 
 <div class="fixed-whats">
@@ -123,6 +149,9 @@ const items = ref([
     }
 ]);
 
+function enviarCorreo() {
+  window.location.href = "mailto:contacto@imimex.com";
+}
 
 </script>
 
@@ -167,6 +196,17 @@ const items = ref([
 	.p-button-icon{
         font-size: 24px;
     }
+}
+
+.interactive-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.interactive-link:hover {
+  color: #2563eb; /* azul tailwind-500 */
 }
 
 </style>

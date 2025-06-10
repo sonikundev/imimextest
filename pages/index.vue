@@ -34,6 +34,35 @@
     </div>
      <!-- First Banner  -->
 
+     <!-- Skterminal  -->
+     <div class="col-12 flex flex-column align-items-center justify-content-center gap-3 p-0 bg-white py-5">
+        <img 
+        src="../public/assets/img/skterminallogo.png" 
+        class="max-w-30rem w-auto"
+        alt="Logo"
+        />
+
+        <div class="col-12 flex align-items-center justify-content-center gap-2">
+        <img 
+            src="../public/assets/img/lineas.png"
+            class="max-w-3rem"
+            alt="Líneas decorativas"
+        />
+        <div class="custom-hr w-full" />
+        </div>
+
+        <p><span class="pi pi-user mr-2"></span>Nuevo módulo para el Anexo 30 del SAT.</p>
+
+        <a href="https://www.skterminal.com.mx" target="_blank" rel="noopener noreferrer" class="interactive-link">
+        <Button 
+        label="Solicita más información" 
+        severity="info" 
+        raised 
+        />
+        </a>    
+    </div>
+    <!-- Skterminal  -->
+
     <!-- Nuestros Servicios  -->
     <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12 flex containerNuestrosServicios">
 
@@ -932,5 +961,12 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+
+.custom-hr {
+  border: none;
+  border-top: 3px solid #010243;
+  max-width: 500px;
+  margin-left: 15px;
+}
 
 </style>

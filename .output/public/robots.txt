@@ -2,5 +2,5 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://bitbyte.com.mx/~imimex/sitemap.xml
+Sitemap: https://www.imimex.com/sitemap.xml
 # END nuxt-robots

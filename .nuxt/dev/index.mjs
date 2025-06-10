@@ -3,32 +3,32 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import fs, { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, getQuery as getQuery$1, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, setHeader, getHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/devalue/index.js';
-import destr from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, hasProtocol, withHttps, withoutProtocol, withLeadingSlash, withoutTrailingSlash, withBase, joinRelativeURL } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/ufo/dist/index.mjs';
-import { hash } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/ohash/dist/index.mjs';
-import { propsToString, renderSSRHead } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/scule/dist/index.mjs';
-import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/defu/dist/defu.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, getQuery as getQuery$1, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, setHeader, getHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/devalue/index.js';
+import destr from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/destr/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, hasProtocol, withHttps, withoutProtocol, withLeadingSlash, withoutTrailingSlash, withBase, joinRelativeURL } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/ufo/dist/index.mjs';
+import { hash } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/ohash/dist/index.mjs';
+import { propsToString, renderSSRHead } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/scule/dist/index.mjs';
+import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/defu/dist/defu.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/radix3/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/unctx/dist/index.mjs';
-import { isVNode, toValue, version, unref } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/vue/index.mjs';
-import devalue from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import BaseStyle from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/@primevue/core/base/style/index.mjs';
-import { isNotEmpty, isEmpty } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/@primeuix/utils/object/index.mjs';
-import { Theme } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/@primeuix/styled/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file:///Users/rodrigomartinez/Desktop/imimextest/node_modules/@unhead/shared/dist/index.mjs';
+import { consola } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/unctx/dist/index.mjs';
+import { isVNode, toValue, version, unref } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/vue/index.mjs';
+import devalue from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import BaseStyle from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/@primevue/core/base/style/index.mjs';
+import { isNotEmpty, isEmpty } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/@primeuix/utils/object/index.mjs';
+import { Theme } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/@primeuix/styled/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),E=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return E()[o]??r[o]},has(e,o){const i=E();return o in i||o in r},set(e,o,i){const g=E(!0);return g[o]=i,!0},deleteProperty(e,o){if(!o)return !1;const i=E(!0);return delete i[o],!0},ownKeys(){const e=E(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",p=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"]];function B(){if(globalThis.process?.env)for(const e of p){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=B(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const C=t==="test"||n(s.TEST);n(s.MINIMAL)||T||C||!R;const a=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||a)&&s.TERM!=="dumb"||T);const _=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(_?.split(".")[0])||null;const W=globalThis.process||Object.create(null),c={versions:{}};new Proxy(W,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const A=globalThis.process?.release?.name==="node",L=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,u=globalThis.navigator?.userAgent==="Cloudflare-Workers",b=!!globalThis.__lagon__,F=[[S,"netlify"],[N,"edge-light"],[u,"workerd"],[O,"fastly"],[D,"deno"],[L,"bun"],[A,"node"],[b,"lagon"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const P=G();P?.name||"";
 
@@ -4955,7 +4955,7 @@ const _inlineRuntimeConfig = {
               }
             }
           },
-          "darkModeSelector": "system"
+          "darkModeSelector": "none"
         }
       },
       "components": [
@@ -6088,6 +6088,8 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
+      "/sitemap.xml",
+      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "robotsEnabledValue": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -6111,6 +6113,8 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
+      "/sitemap.xml",
+      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "robotsEnabledValue": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -6173,7 +6177,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/rodrigomartinez/Desktop/imimextest/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/server/assets"}];
 
 const assets = createStorage();
 
@@ -6185,11 +6189,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/rodrigomartinez/Desktop/imimextest","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/rodrigomartinez/Desktop/imimextest/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/rodrigomartinez/Desktop/imimextest/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/rodrigomartinez/Desktop/imimextest/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/rodrigomartinez/Desktop/imimextest/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -6628,14 +6632,14 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const rootDir = "/Users/rodrigomartinez/Desktop/imimextest";
+const rootDir = "/Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest";
 
 const devReducers = {
   VNode: (data) => isVNode(data) ? { type: data.type, props: data.props } : void 0,
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _YccKUoK5Fq = (nitroApp) => {
+const _Ns6bMLfBZV = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -7080,7 +7084,7 @@ function publicAssetsURL(...path) {
   return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
 }
 
-const _lTiGcvk4CH = defineNitroPlugin$1(async (nitroApp) => {
+const _Dagn0ONOxe = defineNitroPlugin$1(async (nitroApp) => {
   nitroApp.hooks.hook("render:html", async (ctx, { event }) => {
     getRouteRules(event);
     process.env.NUXT_COMPONENT_ISLANDS && event.path.startsWith("/__nuxt_island");
@@ -7106,7 +7110,7 @@ async function resolveRobotsTxtContext(e, nitro = useNitroApp()) {
   return generateRobotsTxtCtx;
 }
 
-const _7F15r43L2e = defineNitroPlugin$1(async (nitroApp) => {
+const _alxneR9jKh = defineNitroPlugin$1(async (nitroApp) => {
   const { usingNuxtContent, robotsDisabledValue } = useRuntimeConfig()["nuxt-robots"];
   nitroApp._robots = {};
   await resolveRobotsTxtContext(void 0, nitroApp);
@@ -7405,7 +7409,7 @@ const themes = [
 ].join('');
 
 const defineNitroPlugin = (def) => def;
-const _N3zXgokMui = defineNitroPlugin(async (nitroApp) => {
+const _xsONdLCBPa = defineNitroPlugin(async (nitroApp) => {
   nitroApp.hooks.hook("render:html", (html) => {
     html.head.unshift(stylesToTop);
     html.head.push(styles$2);
@@ -7414,10 +7418,10 @@ const _N3zXgokMui = defineNitroPlugin(async (nitroApp) => {
 });
 
 const plugins = [
-  _YccKUoK5Fq,
-_lTiGcvk4CH,
-_7F15r43L2e,
-_N3zXgokMui
+  _Ns6bMLfBZV,
+_Dagn0ONOxe,
+_alxneR9jKh,
+_xsONdLCBPa
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -7480,7 +7484,7 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
-const _h76RLH = defineEventHandler(async (e) => {
+const _s2aUZp = defineEventHandler(async (e) => {
   if (e.context.siteConfig)
     return;
   const runtimeConfig = useRuntimeConfig(e);
@@ -7528,7 +7532,7 @@ const _h76RLH = defineEventHandler(async (e) => {
   e.context.siteConfig = ctx.siteConfig;
 });
 
-const _xXjQwJ = defineEventHandler(async (e) => {
+const _Qi9fuz = defineEventHandler(async (e) => {
   const siteConfig = useSiteConfig(e);
   const nitroOrigin = useNitroOrigin(e);
   const runtimeConfig = useRuntimeConfig(e);
@@ -7542,7 +7546,7 @@ const _xXjQwJ = defineEventHandler(async (e) => {
   };
 });
 
-const _9JgX4e = defineEventHandler(async (e) => {
+const _aiYNvZ = defineEventHandler(async (e) => {
   const nitro = useNitroApp();
   const { indexable, hints } = getSiteRobotConfig(e);
   const { credits, usingNuxtContent, cacheControl } = useRuntimeConfig(e)["nuxt-robots"];
@@ -7597,7 +7601,7 @@ const _9JgX4e = defineEventHandler(async (e) => {
   return hookCtx.robotsTxt;
 });
 
-const _60Q6lf = defineEventHandler(async (e) => {
+const _h1ReS6 = defineEventHandler(async (e) => {
   if (e.path === "/robots.txt" || e.path.startsWith("/__") || e.path.startsWith("/api") || e.path.startsWith("/_nuxt"))
     return;
   const robotConfig = getPathRobotConfig(e);
@@ -7605,7 +7609,7 @@ const _60Q6lf = defineEventHandler(async (e) => {
   e.context.robots = robotConfig;
 });
 
-const _6Z30JH = defineEventHandler(async (e) => {
+const _cQWJBS = defineEventHandler(async (e) => {
   const runtimeConfig = useRuntimeConfig(e)["nuxt-robots"];
   const { indexable, hints } = await getSiteRobotConfig(e);
   const siteConfig = useSiteConfig(e);
@@ -7625,7 +7629,7 @@ const _6Z30JH = defineEventHandler(async (e) => {
   };
 });
 
-const _FmIkPJ = defineEventHandler(async (e) => {
+const _p6hc07 = defineEventHandler(async (e) => {
   const path = getQuery$1(e).path;
   return await getPathRobotConfig(e, {
     path
@@ -7796,7 +7800,7 @@ async function resolveSitemapSources(sources, event) {
   )).flat();
 }
 
-const _lWfO4D = defineEventHandler(async (e) => {
+const _3XT4mO = defineEventHandler(async (e) => {
   const _runtimeConfig = useSimpleSitemapRuntimeConfig();
   const { sitemaps: _sitemaps } = _runtimeConfig;
   const runtimeConfig = { ..._runtimeConfig };
@@ -7818,7 +7822,7 @@ const _lWfO4D = defineEventHandler(async (e) => {
   };
 });
 
-const _PSG3vL = defineEventHandler(async (e) => {
+const _R1jidF = defineEventHandler(async (e) => {
   const fixPath = createSitePathResolver(e, { absolute: false, withBase: true });
   const { sitemapName: fallbackSitemapName, cacheMaxAgeSeconds, version, xslColumns, xslTips } = useSimpleSitemapRuntimeConfig();
   setHeader(e, "Content-Type", "application/xslt+xml");
@@ -8626,7 +8630,7 @@ async function createSitemap(e, definition, runtimeConfig) {
   return sitemap;
 }
 
-const _FQ1ak9 = defineEventHandler(async (e) => {
+const _PFMLru = defineEventHandler(async (e) => {
   const runtimeConfig = useSimpleSitemapRuntimeConfig();
   const { sitemaps } = runtimeConfig;
   if ("index" in sitemaps) {
@@ -8635,7 +8639,7 @@ const _FQ1ak9 = defineEventHandler(async (e) => {
   return createSitemap(e, Object.values(sitemaps)[0], runtimeConfig);
 });
 
-const _c5eHpH = defineEventHandler(async (e) => {
+const _fewIRT = defineEventHandler(async (e) => {
   const _config = useRuntimeConfig();
   const runtimeConfig = _config["nuxt-schema-org"] || _config.public["nuxt-schema-org"];
   const nitroOrigin = useNitroOrigin(e);
@@ -8647,7 +8651,7 @@ const _c5eHpH = defineEventHandler(async (e) => {
 
 const fileMapping = {};
 
-const _1GvOc1 = defineEventHandler(async (e) => {
+const _7bloFT = defineEventHandler(async (e) => {
   const path = parseURL(e.path).pathname;
   if (fileMapping[path]) {
     if (path.endsWith(".svg"))
@@ -8660,22 +8664,22 @@ const _1GvOc1 = defineEventHandler(async (e) => {
   }
 });
 
-const _lazy_JSdT61 = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_6uVkwG = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_JSdT61, lazy: true, middleware: false, method: undefined },
-  { route: '', handler: _h76RLH, lazy: false, middleware: true, method: undefined },
-  { route: '/__site-config__/debug.json', handler: _xXjQwJ, lazy: false, middleware: false, method: undefined },
-  { route: '/robots.txt', handler: _9JgX4e, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _60Q6lf, lazy: false, middleware: false, method: undefined },
-  { route: '/__robots__/debug.json', handler: _6Z30JH, lazy: false, middleware: false, method: undefined },
-  { route: '/__robots__/debug-path.json', handler: _FmIkPJ, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/debug.json', handler: _lWfO4D, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/style.xsl', handler: _PSG3vL, lazy: false, middleware: false, method: undefined },
-  { route: '/sitemap.xml', handler: _FQ1ak9, lazy: false, middleware: false, method: undefined },
-  { route: '/__schema-org__/debug.json', handler: _c5eHpH, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _1GvOc1, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_JSdT61, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_6uVkwG, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _s2aUZp, lazy: false, middleware: true, method: undefined },
+  { route: '/__site-config__/debug.json', handler: _Qi9fuz, lazy: false, middleware: false, method: undefined },
+  { route: '/robots.txt', handler: _aiYNvZ, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _h1ReS6, lazy: false, middleware: false, method: undefined },
+  { route: '/__robots__/debug.json', handler: _cQWJBS, lazy: false, middleware: false, method: undefined },
+  { route: '/__robots__/debug-path.json', handler: _p6hc07, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/debug.json', handler: _3XT4mO, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/style.xsl', handler: _R1jidF, lazy: false, middleware: false, method: undefined },
+  { route: '/sitemap.xml', handler: _PFMLru, lazy: false, middleware: false, method: undefined },
+  { route: '/__schema-org__/debug.json', handler: _fewIRT, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _7bloFT, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_6uVkwG, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -8987,7 +8991,7 @@ const appTeleportAttrs = {"id":"teleports"};
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file:///Users/rodrigomartinez/Desktop/imimextest/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file:///Users/rodrigomartinez/Desktop/IMIMEX/Webpage/imimextest/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSPARenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
