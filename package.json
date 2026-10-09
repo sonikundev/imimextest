@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "check:content": "node scripts/check-prototype-content.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {

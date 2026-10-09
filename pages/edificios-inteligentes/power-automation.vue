@@ -1,0 +1,986 @@
+<template>
+  <div ref="pageRoot" class="intelligent-page bms-power-automation">
+<div class="section-navigation"><div class="wrap"><nav aria-label="En esta página" class="nav">
+          <a href="#costos">Qué resuelve</a>
+          <a href="#preguntas-pme">Qué mide</a>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#sectores">Sectores</a>
+          <a href="#preguntas">Preguntas</a>
+        </nav></div></div>
+
+    <main>
+      <!-- 1. HERO -->
+      <section class="hero" id="inicio">
+        <svg class="wm" viewBox="425 687 682 786" aria-hidden="true">
+          <path
+            d="m483.45,876.25l.77.95,4.39,5.42.49.61.55.56c7,7.06,16.98,10.65,29.64,10.65,27.78,0,61.84-17.3,62.17-17.47l193.6-105.21,235.07,129.67-157.86,85.9c-.4.22-40.18,23.27-47.54,49.88-2.35,8.48-1.38,16.73,2.8,23.87l3.06,5.28c4.28,7.38,12.3,11.97,20.91,11.97,4.04,0,8.06-1.02,11.61-2.95l220.49-119.98c20.24-11.01,32.36-31.1,32.43-53.72.07-22.63-11.94-42.78-32.11-53.9l-257.72-142.16c-9.43-5.2-20.18-7.95-31.1-7.95h0c-10.78,0-21.41,2.68-30.74,7.76l-252.21,137.06c-5.74,3.12-9.86,8.27-11.61,14.5-1.74,6.19-.92,12.66,2.31,18.23l.61,1.05Zm348.06,186.43c-.16,0-.32-.02-.48-.03.43.02.86.02,1.29-.02-.27.03-.54.05-.81.05Zm248.89-161.06h0c-.02,5.26-.91,10.33-2.6,15.08,1.69-4.75,2.58-9.82,2.6-15.08Zm-302.89-146.38l257.72,142.16-257.72-142.16c-.37-.2-.76-.36-1.16-.46.4.1.79.25,1.16.46Zm-2.4-41.95s.05,0,.08,0c-.53,0-1.07.03-1.6.04.51-.02,1.02-.05,1.52-.05Zm-201.11,149.93l198.73-108s.09-.03.14-.05c-.04.02-.09.03-.14.05l-198.73,108c-.11.06-.28.15-.47.24.19-.1.35-.18.47-.24Zm-52.51,15.53c-.74.03-1.47.05-2.19.05-.09,0-.17,0-.26,0,.81,0,1.62,0,2.45-.04Z"
+          />
+          <path
+            d="m1069.61,1021.28h-6.17c-9.88,0-18.71,3.66-25.56,10.58-11.83,11.96-17.33,33.45-16.33,63.86.01.39.02.68.03.88v171.02s-244.64,124.04-244.64,124.04c-4.73,2.4-10.16,3.67-15.72,3.67s-11.2-1.32-16-3.81l-.23-.12-.24-.11c-1.53-.73-154.04-73.75-202.64-100.45-36.24-19.91-35.86-33.38-35.28-53.77.08-2.67.16-5.42.16-8.26v-219.74c.01-.22.03-.5.05-.83.48-7.81,1.94-31.58-12.71-46.81-5.2-5.4-14.58-11.84-29.77-11.84h-5.61c-13.17,0-23.89,10.19-23.89,22.72v303.27c0,19.54,11.5,37.64,30.01,47.26l245.1,127.25c15.45,8.02,33.1,12.26,51.02,12.26s34.9-4.08,50.13-11.8l251.63-127.59c18.83-9.55,30.53-27.76,30.53-47.52v-231.44c0-12.53-10.72-22.72-23.89-22.72Zm-578.59,207.53c0,3.1-.1,6.17-.19,9.24.08-3.07.19-6.14.19-9.24h0Zm270.19,217.9c-.82,0-1.63-.05-2.45-.07.82.02,1.64.07,2.46.07h0Zm276.34-350.21c0-.37-.03-1.19-.07-2.38.04,1.19.07,2.01.07,2.38h0Z"
+          />
+          <path
+            d="m722.95,1129.25v149.81c-.21,8.91-.26,51.31,17.22,69.25,5.84,5.99,13.15,9.16,21.14,9.16h5.96c12.53,0,22.72-10.19,22.72-22.72v-243.48c0-19.56-10.58-37.68-27.62-47.29l-213.38-120.39c-3.4-1.92-7.26-2.93-11.16-2.93h0c-8.19,0-15.77,4.43-19.79,11.56l-3.36,5.96-.68,1.2-.46,1.3c-3.23,9.18-5.25,27.49,17.43,47.05,9.5,8.19,19.58,13.44,21.98,14.64l142.47,78.67c26.89,16,27.54,44.86,27.52,48.11v.04s0,.09,0,.09Zm-185.51-192.93c.13,0,.26-.03.4-.03.23,0,.46.02.7.04-.36-.04-.73-.04-1.09-.02Zm3.87.89c-.38-.21-.77-.38-1.17-.51.4.14.79.3,1.17.51l213.38,120.39-213.38-120.39Z"
+          />
+        </svg>
+        <div class="wrap">
+          <div>
+            <p class="hero-kicker">
+              Monitoreo de energía con Power Automation de Schneider Electric,
+              antes Power Monitoring Expert (PME)
+            </p>
+            <h1>La energía que no ve, también la paga.</h1>
+            <p class="lead">
+              Medimos y analizamos la energía eléctrica de su inmueble: consumo,
+              demanda, calidad de energía y eventos. Para que sepa qué está
+              dañando sus equipos, dónde se va su dinero y qué hacer al
+              respecto.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contacto"
+                >Solicitar un diagnóstico</a>
+              <a class="btn btn-ghost" href="#preguntas-pme"
+                >Ver qué mide Power Automation</a>
+            </div>
+            <div class="trust">
+              <span>Certificación EcoXpert en Power Automation</span>
+              <span>Ingeniería a la medida de su instalación</span>
+              <span>Acompañamiento después del arranque</span>
+            </div>
+          </div>
+
+          <figure class="hero-art" style="margin: 0">
+            <svg viewBox="0 0 560 500" role="img" aria-labelledby="art-t">
+              <title id="art-t">
+                Diagrama unifilar de un inmueble con medidores en la acometida y
+                en cada circuito principal, conectados a lecturas de demanda,
+                factor de potencia y distorsión armónica
+              </title>
+              <!-- Transformador -->
+              <circle class="sld-thin" cx="280" cy="38" r="20" />
+              <circle class="sld-thin" cx="280" cy="66" r="20" />
+              <path class="sld" d="M280 86 V200" />
+              <!-- Medidor principal -->
+              <circle class="meter" cx="280" cy="140" r="17" />
+              <text class="meter-t" x="280" y="145">M</text>
+              <!-- Barra principal -->
+              <path class="sld" d="M70 200 H490" />
+              <!-- Alimentadores -->
+              <path
+                class="sld-thin"
+                d="M110 200 V360 M220 200 V360 M330 200 V360 M440 200 V360"
+              />
+              <circle class="meter" cx="110" cy="272" r="15" />
+              <text class="meter-t" x="110" y="277">M</text>
+              <circle class="meter" cx="220" cy="272" r="15" />
+              <text class="meter-t" x="220" y="277">M</text>
+              <circle class="meter" cx="330" cy="272" r="15" />
+              <text class="meter-t" x="330" y="277">M</text>
+              <circle class="meter" cx="440" cy="272" r="15" />
+              <text class="meter-t" x="440" y="277">M</text>
+              <!-- Cargas -->
+              <rect
+                class="load-r"
+                x="66"
+                y="360"
+                width="88"
+                height="44"
+                rx="10"
+              />
+              <text class="load-t" x="110" y="387">Clima</text>
+              <rect
+                class="load-r"
+                x="176"
+                y="360"
+                width="88"
+                height="44"
+                rx="10"
+              />
+              <text class="load-t" x="220" y="387">Iluminación</text>
+              <rect
+                class="load-r"
+                x="286"
+                y="360"
+                width="88"
+                height="44"
+                rx="10"
+              />
+              <text class="load-t" x="330" y="387">TI y UPS</text>
+              <rect
+                class="load-r"
+                x="396"
+                y="360"
+                width="88"
+                height="44"
+                rx="10"
+              />
+              <text class="load-t" x="440" y="387">Servicios</text>
+              <!-- Cableado de datos -->
+              <path class="wire" d="M263 140 C220 140 190 122 160 122" />
+              <path class="wire" d="M297 140 C340 140 370 122 400 122" />
+              <path class="wire" d="M345 272 C372 272 385 290 385 330 V425" />
+              <!-- Lecturas -->
+              <g class="tag" transform="translate(10 90)">
+                <rect width="150" height="64" rx="12" />
+                <text class="t-label" x="14" y="24">Factor de potencia</text>
+                <text class="t-val" x="14" y="50">
+                  <tspan data-live="fp">0.93</tspan>
+                </text>
+              </g>
+              <g class="tag" transform="translate(400 90)">
+                <rect width="150" height="64" rx="12" />
+                <text class="t-label" x="14" y="24">Demanda total</text>
+                <text class="t-val" x="14" y="50">
+                  <tspan data-live="kw">412</tspan>
+                  kW
+                </text>
+              </g>
+              <g class="tag" transform="translate(310 425)">
+                <rect width="150" height="64" rx="12" />
+                <text class="t-label" x="14" y="24">THD de tensión, TI</text>
+                <text class="t-val" x="14" y="50">
+                  <tspan data-live="thd">2.8</tspan>
+                  %
+                </text>
+              </g>
+            </svg>
+            <figcaption>Lecturas ilustrativas</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 2. COSTOS OCULTOS -->
+      <section class="hidden-costs" id="costos">
+        <div class="wrap">
+          <h2>
+            Lo que no se mide se paga dos veces: en la factura y en los equipos.
+          </h2>
+          <div class="hc-grid">
+            <article class="hc">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path
+                  class="ico"
+                  d="M6 32 h28 M10 32 V22 M17 32 V14 M24 32 V18 M31 32 V8 M28 11 l3 -3 l3 3"
+                />
+              </svg>
+              <div>
+                <h3>Cargos que nadie explica</h3>
+                <p>
+                  Los picos de demanda, el bajo factor de potencia y el consumo
+                  fuera de horario se reflejan en su factura, pero el recibo no
+                  le dice qué los provocó.
+                </p>
+              </div>
+            </article>
+            <article class="hc">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path
+                  class="ico"
+                  d="M4 22 c4 -10 6 -10 8 0 s4 10 8 0 s4 -10 8 0 s4 10 8 0"
+                />
+              </svg>
+              <div>
+                <h3>Daño que se acumula</h3>
+                <p>
+                  Armónicos, variaciones de tensión y sobrecargas desgastan
+                  motores, variadores, UPS y electrónica día con día, hasta que
+                  un equipo falla “sin razón”.
+                </p>
+              </div>
+            </article>
+            <article class="hc">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path
+                  class="ico"
+                  d="M20 6 a10 10 0 0 1 6 18 v4 h-12 v-4 a10 10 0 0 1 6 -18 Z M15 33 h10 M17 37 h6"
+                />
+              </svg>
+              <div>
+                <h3>Ahorros que no se pueden comprobar</h3>
+                <p>
+                  Cambiar equipos por otros más eficientes ayuda, pero sin
+                  medición no sabe dónde estaba el consumo ni cuánto ahorró
+                  realmente.
+                </p>
+              </div>
+            </article>
+            <article class="hc">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path class="ico" d="M20 5 l16 28 H4 Z M20 16 v8 M20 29 v.5" />
+              </svg>
+              <div>
+                <h3>Fallas sin explicación</h3>
+                <p>
+                  Un paro, una transferencia del UPS o un variador que se
+                  dispara. Sin registro de eventos, la causa se queda en
+                  suposiciones y el problema se repite.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. PREGUNTAS QUE RESPONDE Power Automation -->
+      <section class="qa" id="preguntas-pme">
+        <div class="wrap">
+          <h2>Las preguntas que Power Automation le ayuda a responder.</h2>
+          <p class="lead">
+            Power Automation reúne la información de medidores instalados en los
+            puntos clave de su instalación y la convierte en respuestas. Elija
+            una pregunta para ver cómo.
+          </p>
+          <div class="qa-box">
+            <div class="qa-tabs" role="tablist" aria-label="Preguntas">
+              <button
+                class="qa-tab"
+                role="tab"
+                id="t1"
+                aria-controls="p1"
+                aria-selected="true"
+              >
+                ¿Por qué subió mi factura?
+              </button>
+              <button
+                class="qa-tab"
+                role="tab"
+                id="t2"
+                aria-controls="p2"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                ¿Por qué se dañan mis equipos?
+              </button>
+              <button
+                class="qa-tab"
+                role="tab"
+                id="t3"
+                aria-controls="p3"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                ¿Cuánto consume cada área?
+              </button>
+              <button
+                class="qa-tab"
+                role="tab"
+                id="t4"
+                aria-controls="p4"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                ¿Qué pasó en el último paro?
+              </button>
+            </div>
+
+            <div class="qa-panel" role="tabpanel" id="p1" aria-labelledby="t1">
+              <figure class="qa-chart" style="margin: 0 0 1.5rem">
+                <svg
+                  viewBox="0 0 480 190"
+                  role="img"
+                  aria-label="Perfil de demanda de un día con un pico a las 14 horas"
+                >
+                  <line class="ch-axis" x1="30" y1="160" x2="470" y2="160" />
+                  <path
+                    class="ch-area"
+                    d="M30 160 L30 132 L66 134 L102 130 L138 110 L174 82 L210 70 L246 64 L282 40 L300 30 L318 44 L354 66 L390 92 L426 120 L470 130 L470 160 Z"
+                  />
+                  <path
+                    class="ch-line"
+                    d="M30 132 L66 134 L102 130 L138 110 L174 82 L210 70 L246 64 L282 40 L300 30 L318 44 L354 66 L390 92 L426 120 L470 130"
+                  />
+                  <circle class="ch-peak" cx="300" cy="30" r="6" />
+                  <text class="ch-t-alert" x="312" y="26">
+                    Pico de demanda, 14:00
+                  </text>
+                  <text class="ch-t" x="30" y="180">0 h</text>
+                  <text class="ch-t" x="138" y="180">6 h</text>
+                  <text class="ch-t" x="246" y="180">12 h</text>
+                  <text class="ch-t" x="354" y="180">18 h</text>
+                  <text class="ch-t" x="448" y="180">24 h</text>
+                </svg>
+                <figcaption>Datos ilustrativos</figcaption>
+              </figure>
+              <div class="qa-cols">
+                <div>
+                  <h3>Lo que mide</h3>
+                  <p>
+                    Consumo y demanda a lo largo del día, factor de potencia y
+                    el comportamiento de cada circuito principal.
+                  </p>
+                </div>
+                <div>
+                  <h3>Lo que usted obtiene</h3>
+                  <p>
+                    Qué cargas provocan los picos y a qué hora, para escalonar
+                    su operación y evitar cargos por demanda y por bajo factor
+                    de potencia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="qa-panel"
+              role="tabpanel"
+              id="p2"
+              aria-labelledby="t2"
+              hidden
+            >
+              <figure class="qa-chart" style="margin: 0 0 1.5rem">
+                <svg
+                  viewBox="0 0 480 190"
+                  role="img"
+                  aria-label="Espectro de armónicos con el quinto armónico por encima del límite de referencia"
+                >
+                  <line class="ch-axis" x1="30" y1="160" x2="470" y2="160" />
+                  <line class="ch-limit" x1="30" y1="78" x2="470" y2="78" />
+                  <text class="ch-t-alert" x="470" y="70" text-anchor="end">
+                    Límite de referencia
+                  </text>
+                  <rect
+                    class="ch-bar-soft"
+                    x="60"
+                    y="112"
+                    width="44"
+                    height="48"
+                    rx="4"
+                  />
+                  <rect
+                    class="ch-bar"
+                    x="140"
+                    y="52"
+                    width="44"
+                    height="108"
+                    rx="4"
+                    style="fill: var(--alerta)"
+                  />
+                  <rect
+                    class="ch-bar-soft"
+                    x="220"
+                    y="96"
+                    width="44"
+                    height="64"
+                    rx="4"
+                  />
+                  <rect
+                    class="ch-bar-soft"
+                    x="300"
+                    y="128"
+                    width="44"
+                    height="32"
+                    rx="4"
+                  />
+                  <rect
+                    class="ch-bar-soft"
+                    x="380"
+                    y="138"
+                    width="44"
+                    height="22"
+                    rx="4"
+                  />
+                  <text class="ch-t" x="82" y="180" text-anchor="middle">
+                    3.º
+                  </text>
+                  <text
+                    class="ch-t-strong"
+                    x="162"
+                    y="180"
+                    text-anchor="middle"
+                  >
+                    5.º
+                  </text>
+                  <text class="ch-t" x="242" y="180" text-anchor="middle">
+                    7.º
+                  </text>
+                  <text class="ch-t" x="322" y="180" text-anchor="middle">
+                    11.º
+                  </text>
+                  <text class="ch-t" x="402" y="180" text-anchor="middle">
+                    13.º
+                  </text>
+                  <text class="ch-t" x="30" y="20">
+                    Distorsión armónica por orden, tablero de TI
+                  </text>
+                </svg>
+                <figcaption>Datos ilustrativos</figcaption>
+              </figure>
+              <div class="qa-cols">
+                <div>
+                  <h3>Lo que mide</h3>
+                  <p>
+                    Armónicos, desbalance, variaciones de tensión y sobrecargas
+                    en tableros y cargas críticas.
+                  </p>
+                </div>
+                <div>
+                  <h3>Lo que usted obtiene</h3>
+                  <p>
+                    La causa del desgaste de motores, variadores, UPS y
+                    electrónica antes de que fallen, con la evidencia para
+                    corregirla.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="qa-panel"
+              role="tabpanel"
+              id="p3"
+              aria-labelledby="t3"
+              hidden
+            >
+              <figure class="qa-chart" style="margin: 0 0 1.5rem">
+                <svg
+                  viewBox="0 0 480 190"
+                  role="img"
+                  aria-label="Consumo por área: climatización 42 por ciento, TI y UPS 21, iluminación 18, servicios 11, otros 8"
+                >
+                  <text class="ch-t-strong" x="0" y="26">Climatización</text>
+                  <rect
+                    class="ch-bar"
+                    x="120"
+                    y="12"
+                    width="290"
+                    height="20"
+                    rx="4"
+                  />
+                  <text class="ch-t" x="418" y="27">42 %</text>
+                  <text class="ch-t-strong" x="0" y="62">TI y UPS</text>
+                  <rect
+                    class="ch-bar-soft"
+                    x="120"
+                    y="48"
+                    width="145"
+                    height="20"
+                    rx="4"
+                  />
+                  <text class="ch-t" x="273" y="63">21 %</text>
+                  <text class="ch-t-strong" x="0" y="98">Iluminación</text>
+                  <rect
+                    class="ch-bar-soft"
+                    x="120"
+                    y="84"
+                    width="124"
+                    height="20"
+                    rx="4"
+                  />
+                  <text class="ch-t" x="252" y="99">18 %</text>
+                  <text class="ch-t-strong" x="0" y="134">Servicios</text>
+                  <rect
+                    class="ch-bar-soft"
+                    x="120"
+                    y="120"
+                    width="76"
+                    height="20"
+                    rx="4"
+                  />
+                  <text class="ch-t" x="204" y="135">11 %</text>
+                  <text class="ch-t-strong" x="0" y="170">Otros</text>
+                  <rect
+                    class="ch-bar-soft"
+                    x="120"
+                    y="156"
+                    width="55"
+                    height="20"
+                    rx="4"
+                  />
+                  <text class="ch-t" x="183" y="171">8 %</text>
+                </svg>
+                <figcaption>Datos ilustrativos</figcaption>
+              </figure>
+              <div class="qa-cols">
+                <div>
+                  <h3>Lo que mide</h3>
+                  <p>
+                    Consumo por área, edificio, tablero, equipo o inquilino, con
+                    históricos para comparar periodos.
+                  </p>
+                </div>
+                <div>
+                  <h3>Lo que usted obtiene</h3>
+                  <p>
+                    Dónde conviene actuar primero, asignación de costos por
+                    centro de costo y comparación entre edificios o sucursales.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="qa-panel"
+              role="tabpanel"
+              id="p4"
+              aria-labelledby="t4"
+              hidden
+            >
+              <div class="qa-chart">
+                <ol class="ev" aria-label="Secuencia de eventos ilustrativa">
+                  <li>
+                    <time>14:32:05</time
+                    ><span class="alert">Hueco de tensión en la acometida</span>
+                  </li>
+                  <li>
+                    <time>14:32:05</time
+                    ><span>El UPS transfiere a baterías</span>
+                  </li>
+                  <li>
+                    <time>14:32:06</time
+                    ><span>El variador de la bomba 3 se dispara</span>
+                  </li>
+                  <li>
+                    <time>14:32:09</time
+                    ><span>Tensión normal en la acometida</span>
+                  </li>
+                  <li>
+                    <time>14:41:30</time><span>Operación restablecida</span>
+                  </li>
+                </ol>
+                <p
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--muted);
+                    text-align: right;
+                    padding: 0 0.25rem 0.25rem;
+                  "
+                >
+                  Datos ilustrativos
+                </p>
+              </div>
+              <div class="qa-cols">
+                <div>
+                  <h3>Lo que mide</h3>
+                  <p>
+                    Eventos eléctricos con fecha y hora en los distintos puntos
+                    de medición, con sus formas de onda.
+                  </p>
+                </div>
+                <div>
+                  <h3>Lo que usted obtiene</h3>
+                  <p>
+                    La secuencia real de lo que pasó, para saber si la causa
+                    vino de la red o de su instalación y evitar que se repita.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. COMO FUNCIONA -->
+      <section class="how" id="como-funciona">
+        <div class="wrap">
+          <h2>Un sistema diseñado para su instalación.</h2>
+          <p class="lead">
+            No hay dos instalaciones iguales. Por eso cada sistema Power
+            Automation empieza con ingeniería: qué medir, dónde y con qué
+            equipo, según lo que usted necesita saber.
+          </p>
+          <ol class="flow">
+            <li>
+              <h3>Medición</h3>
+              <p>
+                Medidores en la acometida, los tableros principales y las cargas
+                críticas, elegidos según lo que hay que vigilar en cada punto.
+              </p>
+            </li>
+            <li>
+              <h3>Comunicación</h3>
+              <p>
+                Una red que lleva los datos al servidor, coordinada con su área
+                de TI desde el diseño.
+              </p>
+            </li>
+            <li>
+              <h3>Software Power Automation</h3>
+              <p>
+                Reúne, almacena y analiza la información, genera alarmas,
+                tableros y reportes.
+              </p>
+            </li>
+            <li>
+              <h3>Su equipo</h3>
+              <p>
+                Recibe información clara para decidir, y nosotros le acompañamos
+                para interpretarla.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 5. SECTORES -->
+      <section class="sectors" id="sectores">
+        <div class="wrap">
+          <h2>Dónde Power Automation hace la diferencia.</h2>
+          <div class="sectors-list">
+            <div class="sector">
+              <h3>Data centers</h3>
+              <span class="prio">Continuidad operativa</span>
+              <p>
+                Supervisión de UPS, tableros, demanda y eventos eléctricos para
+                que una falla no se convierta en una caída.
+              </p>
+              <span></span>
+            </div>
+            <div class="sector">
+              <h3>Industria</h3>
+              <span class="prio">Producción sin paros</span>
+              <p>
+                Detección de armónicos, variaciones y sobrecargas antes de que
+                detengan un proceso, y análisis de cada evento.
+              </p>
+              <span></span>
+            </div>
+            <div class="sector">
+              <h3>Hospitales</h3>
+              <span class="prio">Suministro confiable</span>
+              <p>
+                Vigilancia de la calidad y la confiabilidad de la energía que
+                alimenta áreas críticas y equipo médico.
+              </p>
+              <span></span>
+            </div>
+            <div class="sector">
+              <h3>Aeropuertos y terminales</h3>
+              <span class="prio">Infraestructura disponible</span>
+              <p>
+                Supervisión de la distribución eléctrica y detección de
+                condiciones anormales en instalaciones extensas.
+              </p>
+              <span></span>
+            </div>
+            <div class="sector">
+              <h3>Retail y multisucursal</h3>
+              <span class="prio">Costo de operación</span>
+              <p>
+                Dónde, cuándo y cuánto consume cada sucursal, para comparar y
+                actuar donde más rinde.
+              </p>
+              <span></span>
+            </div>
+            <div class="sector">
+              <h3>Universidades y campus</h3>
+              <span class="prio">Varios edificios</span>
+              <p>
+                Consumo, demanda y desempeño energético comparados entre
+                edificios en una sola plataforma.
+              </p>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Power Automation + Building Automation -->
+      <section class="together" id="pme-ebo">
+        <div class="wrap">
+          <h2>Power Automation le dice qué pasa. Building Automation actúa.</h2>
+          <div>
+            <p>
+              Power Automation mide, analiza y alerta. Building Automation
+              controla climatización, iluminación y demás servicios del
+              edificio.
+            </p>
+            <p>
+              Integrados, el sistema que detecta un pico de demanda puede
+              ajustar horarios y equipos para evitarlo. Puede empezar con uno y
+              sumar el otro cuando lo necesite.
+            </p>
+            <NuxtLink class="btn" to="/edificios-inteligentes/building-automation" data-ebo
+              >Conocer Building Automation</NuxtLink>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. PROCESO -->
+      <section class="process" id="proceso">
+        <div class="wrap">
+          <h2>Del diagnóstico a la información útil.</h2>
+          <ol class="steps">
+            <li>
+              <h3>Diagnóstico</h3>
+              <p>
+                Revisamos sus tableros, sus cargas principales y sus recibos de
+                energía para entender qué necesita saber.
+              </p>
+            </li>
+            <li>
+              <h3>Ingeniería</h3>
+              <p>
+                Definimos los puntos de medición, los equipos, la arquitectura
+                de comunicación y el presupuesto.
+              </p>
+            </li>
+            <li>
+              <h3>Suministro e instalación</h3>
+              <p>
+                Medidores y software originales de Schneider Electric,
+                instalados por personal certificado.
+              </p>
+            </li>
+            <li>
+              <h3>Puesta en marcha</h3>
+              <p>
+                Configuramos alarmas, tableros y reportes, y capacitamos a su
+                equipo para usarlos.
+              </p>
+            </li>
+            <li>
+              <h3>Acompañamiento</h3>
+              <p>
+                Revisamos la información con usted, damos mantenimiento y
+                mantenemos el sistema al día.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 8. POR QUE IMIMEX -->
+      <section class="why" id="por-que">
+        <div class="wrap">
+          <div>
+            <h2>Medir bien es nuestro oficio.</h2>
+            <div class="badge-row">
+              <img
+                src="/assets/edificios-inteligentes/EcoXpert_Building_Automation.jpg"
+                alt="EcoXpert Building Automation, certificado por Schneider Electric"
+                width="280"
+                height="282"
+              /><img
+                src="/assets/edificios-inteligentes/EcoXpert_Power_Automation.png"
+                alt="EcoXpert Power Automation, certificado por Schneider Electric"
+                width="280"
+                height="282"
+              />
+            </div>
+            <p class="badge-cap">
+              Competencias EcoXpert de IMIMEX, certificadas por Schneider
+              Electric.
+            </p>
+          </div>
+          <div class="why-points">
+            <div>
+              <h3>Certificados en Power Automation.</h3>
+              <p>
+                Somos EcoXpert de Schneider Electric en Power Automation, con el
+                respaldo técnico y de garantía del fabricante.
+              </p>
+            </div>
+            <div>
+              <h3>Venimos de la medición.</h3>
+              <p>
+                Nuestra experiencia nace en la instrumentación y el control de
+                procesos industriales, donde un dato equivocado tiene
+                consecuencias. Ese rigor lo aplicamos a su energía.
+              </p>
+            </div>
+            <div>
+              <h3>Información que se usa.</h3>
+              <p>
+                No entregamos un software y nos vamos. Le ayudamos a interpretar
+                los datos y a convertirlos en decisiones.
+              </p>
+            </div>
+            <div>
+              <h3>Con usted después del arranque.</h3>
+              <p>
+                Mesa de ayuda 24x7, mantenimiento por personal autorizado y
+                asesoría aun cuando la garantía haya terminado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. CONTACTO -->
+      <section class="contact" id="contacto" style="background: var(--surface)">
+        <div class="wrap">
+          <div>
+            <h2>Empecemos por saber qué pasa con su energía.</h2>
+            <p class="lead">
+              Cuéntenos sobre su instalación. Un ingeniero especialista le
+              contactará para definir el diagnóstico.
+            </p>
+            <div class="contact-note" style="background: var(--bg)">
+              Si tiene a la mano un recibo de energía reciente, téngalo cerca:
+              nos ayuda a entender su caso desde la primera llamada.
+            </div>
+          </div>
+          <BuildingsLeadForm subject="Power Automation: monitoreo de energía | IMIMEX">
+            <BuildingsContactFields company-label="Empresa" />
+            <div class="field">
+              <label for="f-tipo"
+                >Tipo de inmueble <span class="req">*</span></label
+              >
+              <select id="f-tipo" name="tipo_inmueble" required>
+                <option value="">Seleccione una opción</option>
+                <option>Data center</option>
+                <option>Planta industrial</option>
+                <option>Hospital</option>
+                <option>Aeropuerto o terminal</option>
+                <option>Retail o multisucursal</option>
+                <option>Hotel</option>
+                <option>Corporativo</option>
+                <option>Universidad o campus</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-med"
+                >¿Qué medición tiene hoy? <span class="req">*</span></label
+              >
+              <select id="f-med" name="medicion_actual" required>
+                <option value="">Seleccione una opción</option>
+                <option>Solo el medidor de CFE</option>
+                <option>Medidores propios sin software</option>
+                <option>Un sistema de monitoreo que no se usa</option>
+                <option>No lo sé</option>
+              </select>
+            </div>
+            <fieldset>
+              <span class="legend">¿Qué le preocupa más?</span>
+              <div class="chips">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interes"
+                    value="factura"
+                  />Factura alta</label
+                >
+                <label
+                  ><input type="checkbox" name="interes" value="fallas" />Fallas
+                  de equipos</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interes"
+                    value="calidad"
+                  />Calidad de energía</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interes"
+                    value="por-area"
+                  />Consumo por área</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interes"
+                    value="reportes"
+                  />Reportes y cumplimiento</label
+                >
+              </div>
+            </fieldset>
+            <div class="field full">
+              <label for="f-urg"
+                >¿Qué tan pronto lo necesita? <span class="req">*</span></label
+              >
+              <select id="f-urg" name="urgencia" required>
+                <option value="">Seleccione una opción</option>
+                <option>Urgente</option>
+                <option>Este trimestre</option>
+                <option>Este año</option>
+                <option>Solo estoy explorando</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="f-com">Comentarios</label
+              ><textarea id="f-com" name="comentarios"></textarea>
+            </div>
+            
+            
+          </BuildingsLeadForm>
+        </div>
+      </section>
+
+      <!-- 10. PREGUNTAS -->
+      <section class="faq" id="preguntas">
+        <div class="wrap">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details>
+              <summary>
+                ¿En qué se diferencia Power Automation del medidor de CFE?
+              </summary>
+              <p>
+                El medidor de CFE registra lo que usted paga en total. Power
+                Automation le muestra lo que pasa dentro de su instalación:
+                cuánto consume cada área, cuándo se generan los picos, cómo está
+                la calidad de la energía y qué eventos ocurrieron.
+              </p>
+            </details>
+            <details>
+              <summary>¿Tengo que cambiar mis medidores actuales?</summary>
+              <p>
+                No siempre. Si sus medidores tienen comunicación, en muchos
+                casos se pueden integrar. En el diagnóstico revisamos lo que
+                tiene y le decimos qué conviene conservar y qué agregar.
+              </p>
+            </details>
+            <details>
+              <summary>¿Cuánto voy a ahorrar?</summary>
+              <p>
+                Depende de su instalación y de las decisiones que tome con la
+                información. No prometemos una cifra antes de medir: Power
+                Automation le da los datos para identificar oportunidades y
+                comprobar el resultado de cada acción.
+              </p>
+            </details>
+            <details>
+              <summary>¿Power Automation puede controlar mis equipos?</summary>
+              <p>
+                Power Automation mide, analiza y alerta. El control de
+                climatización, iluminación y otros servicios lo hace Building
+                Automation. Integrados, uno detecta y el otro actúa.
+              </p>
+            </details>
+            <details>
+              <summary>¿Necesito involucrar a mi área de TI?</summary>
+              <p>
+                Sí, y lo recomendamos. Power Automation usa la red de
+                comunicación de su inmueble, así que coordinamos con TI la
+                conectividad, los accesos y la seguridad desde la etapa de
+                ingeniería.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Ya tengo Power Automation instalado, pero nadie lo usa. ¿Pueden
+                ayudarme?
+              </summary>
+              <p>
+                Sí. Revisamos su sistema, lo ponemos al día y capacitamos a su
+                equipo para que la información vuelva a servir. Conozca nuestro
+                <NuxtLink to="/edificios-inteligentes/mantenimiento-bms" data-mant
+                  >servicio de mantenimiento</NuxtLink>.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</template>
+
+<script setup>
+import initialize from "~/utils/buildings/power-automation";
+
+const pageRoot = ref(null);
+useBuildingPrototype(pageRoot, initialize);
+useSeoMeta({
+  title: "Power Automation: monitoreo de energía | IMIMEX",
+  description: "Medimos consumo, demanda, calidad de energía y eventos eléctricos con Power Automation de Schneider Electric. Integradores certificados EcoXpert.",
+});
+</script>
+
+<style src="~/scss/buildings/power-automation.css"></style>

@@ -26,6 +26,30 @@ const sources = [
                 "loc": "/contact"
             },
             {
+                "loc": "/edificios-inteligentes/building-automation"
+            },
+            {
+                "loc": "/edificios-inteligentes"
+            },
+            {
+                "loc": "/edificios-inteligentes/mantenimiento-bms"
+            },
+            {
+                "loc": "/edificios-inteligentes/power-automation"
+            },
+            {
+                "loc": "/edificios-inteligentes/sectores/data-centers"
+            },
+            {
+                "loc": "/edificios-inteligentes/sectores/hospitales"
+            },
+            {
+                "loc": "/edificios-inteligentes/sectores/hoteles"
+            },
+            {
+                "loc": "/edificios-inteligentes/sectores/industria"
+            },
+            {
                 "loc": "/"
             }
         ],
@@ -41,16 +65,40 @@ const sources = [
         },
         "urls": [
             {
-                "loc": "/"
+                "loc": "/consultancy"
+            },
+            {
+                "loc": "/contact"
+            },
+            {
+                "loc": "/edificios-inteligentes"
+            },
+            {
+                "loc": "/edificios-inteligentes/mantenimiento-bms"
+            },
+            {
+                "loc": "/edificios-inteligentes/power-automation"
             },
             {
                 "loc": "/about"
             },
             {
-                "loc": "/consultancy"
+                "loc": "/"
             },
             {
-                "loc": "/contact"
+                "loc": "/edificios-inteligentes/sectores/data-centers"
+            },
+            {
+                "loc": "/edificios-inteligentes/sectores/industria"
+            },
+            {
+                "loc": "/edificios-inteligentes/building-automation"
+            },
+            {
+                "loc": "/edificios-inteligentes/sectores/hoteles"
+            },
+            {
+                "loc": "/edificios-inteligentes/sectores/hospitales"
             }
         ],
         "sourceType": "app"

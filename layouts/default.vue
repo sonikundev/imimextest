@@ -36,8 +36,20 @@
         </div>
     </div>
 
-  <div class="footer flex flex-wrap justify-content-between align-items-center">
-    
+  <footer class="footer flex flex-wrap justify-content-between align-items-center">
+    <div class="footer-navigation">
+      <BuildingsPartnerBadges />
+      <nav aria-label="Navegación del pie">
+        <NuxtLink to="/consultancy">Consultoría y software</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes">Edificios inteligentes</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes/building-automation">Building Automation</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes/power-automation">Power Automation</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes/mantenimiento-bms">Mantenimiento BMS</NuxtLink>
+        <NuxtLink to="/about">Nosotros</NuxtLink>
+        <NuxtLink to="/contact">Contacto</NuxtLink>
+      </nav>
+    </div>
+
     <!-- Botón de contacto -->
     <div class="flex align-items-center">
       <buttonContacto />
@@ -85,14 +97,14 @@
       </a>
     </div>
 
-    
-  </div>
+
+  </footer>
 
 </div>
 
 <div class="fixed-whats">
-    <a href="https://wa.me/524425639924?text=Hola%20quiero%20más%20información" class="fixed-button">
-        <Button icon="pi pi-whatsapp" severity="success" rounded aria-label="Search" class="button-whats"/>
+    <a href="https://wa.me/525561278189?text=Hola%20quiero%20más%20información" class="fixed-button">
+        <Button icon="pi pi-whatsapp" severity="success" rounded aria-label="Contactar por WhatsApp" class="button-whats"/>
     </a>
 </div>
 
@@ -110,7 +122,7 @@ const items = ref([
         icon: 'pi pi-search',
         items: [
             {
-                label: 'Consultoria',
+                label: 'Consultoría',
                 icon: 'pi pi-phone',
                 to: '/consultancy'
             },
@@ -120,6 +132,7 @@ const items = ref([
             {
                 label: 'Software',
                 icon: 'pi pi-server',
+                to: '/consultancy#software',
                 // items: [
                 //     {
                 //         label: 'skterminal',
@@ -135,6 +148,21 @@ const items = ref([
                 //     }
                 // ]
             }
+        ]
+    },
+    {
+        label: 'Edificios inteligentes',
+        icon: 'pi pi-building',
+        items: [
+            { label: 'Soluciones y sectores', to: '/edificios-inteligentes' },
+            { label: 'Building Automation', to: '/edificios-inteligentes/building-automation' },
+            { label: 'Power Automation', to: '/edificios-inteligentes/power-automation' },
+            { label: 'Mantenimiento BMS', to: '/edificios-inteligentes/mantenimiento-bms' },
+            { separator: true },
+            { label: 'Hoteles', to: '/edificios-inteligentes/sectores/hoteles' },
+            { label: 'Hospitales', to: '/edificios-inteligentes/sectores/hospitales' },
+            { label: 'Data centers', to: '/edificios-inteligentes/sectores/data-centers' },
+            { label: 'Industria', to: '/edificios-inteligentes/sectores/industria' },
         ]
     },
     {
@@ -187,6 +215,31 @@ function enviarCorreo() {
   padding: 1rem;
 }
 
+.footer-navigation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #d5dee9;
+}
+
+.footer-navigation nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 40rem;
+  text-align: left;
+}
+
+.footer-navigation a {
+  color: #055c9f;
+  text-decoration: none;
+}
+
 .backgroundContent {
   background-color: rgb(248, 248, 248);
 }
@@ -210,4 +263,4 @@ function enviarCorreo() {
 }
 
 </style>
-   
+

@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="grid mx-3 fadein animation-duration-400 animation-iteration-1 mb-5">
         <div class="col-12 sm:col-12 md:col-8 lg:col-8 xl:col-8">
             <p style="color:#055c9f; font-size: 18px; height: 0px;">QUIENES SOMOS?</p>
@@ -59,6 +60,14 @@
             </p>
         </div>
     </div>
+    <section class="company-integration">
+      <h2>Software, instrumentación y automatización</h2>
+      <p>Aplicamos nuestra experiencia en software industrial y control de procesos a los sistemas de los edificios. Integramos climatización, iluminación, seguridad y energía para que la información del inmueble se convierta en decisiones de operación.</p>
+      <p>Como integradores certificados EcoXpert de Schneider Electric en Building Automation y Power Automation, acompañamos el diagnóstico, la ingeniería, el suministro e instalación, la puesta en marcha y el mantenimiento.</p>
+      <BuildingsPartnerBadges />
+      <NuxtLink to="/edificios-inteligentes">Conozca nuestra línea de Edificios Inteligentes →</NuxtLink>
+    </section>
+  </div>
 </template>
 
 <script setup>
@@ -66,5 +75,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+.company-integration { padding: 2rem; max-width: 72rem; margin: auto; color: #3a4562; }
+.company-integration h2 { color: #1d2647; }
+.company-integration p { max-width: 60rem; line-height: 1.7; }
+.company-integration a { display: inline-block; color: #055c9f; margin-top: 1.5rem; }
 </style>

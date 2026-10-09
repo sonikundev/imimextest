@@ -1,4 +1,17 @@
 <template>
+  <div>
+    <section class="contact-services">
+      <h1>Contacto IMIMEX</h1>
+      <p>Cuéntenos qué necesita: consultoría y desarrollo de software, automatización de edificios, gestión de energía o mantenimiento BMS.</p>
+      <a class="contact-email" href="mailto:contacto@imimex.com">contacto@imimex.com</a>
+      <nav aria-label="Solicitudes por servicio">
+        <NuxtLink to="/consultancy">Consultoría y software</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes#contacto">Edificios inteligentes</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes/building-automation#contacto">Building Automation</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes/power-automation#contacto">Power Automation</NuxtLink>
+        <NuxtLink to="/edificios-inteligentes/mantenimiento-bms#contacto">Soporte y mantenimiento BMS</NuxtLink>
+      </nav>
+    </section>
     <div class="grid mx-3 fadein animation-duration-400 animation-iteration-1 mb-5">
         <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12">
             <p class="consultoriaSoftware">
@@ -55,6 +68,7 @@
         </div>
 
     </div>
+  </div>
 </template>
 
 <script setup>
@@ -62,5 +76,11 @@
 </script>
 
 <style lang="scss" scoped>
-
+.contact-services { padding: 2rem; max-width: 72rem; margin: auto; }
+.contact-services h1 { color: #1d2647; }
+.contact-services p { max-width: 55rem; line-height: 1.6; }
+.contact-email { color: #055c9f; font-size: 1.25rem; }
+.contact-services nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+.contact-services nav a { color: #055c9f; }
+iframe { max-width: 100%; }
 </style>

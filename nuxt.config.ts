@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   },
   css: [
     '@/scss/styles.scss',
+    '@/scss/buildings/common.css',
     'primeflex/primeflex.scss',
     'primeicons/primeicons.css'
   ],
@@ -35,7 +36,9 @@ export default defineNuxtConfig({
     options: {
       theme: {
           preset: Aura,
-          darkModeSelector: 'none',
+          options: {
+            darkModeSelector: 'none',
+          },
       },      
     }
   },

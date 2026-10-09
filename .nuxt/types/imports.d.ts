@@ -139,6 +139,7 @@ declare global {
   const useAsyncData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']
   const useAttrs: typeof import('../../node_modules/vue')['useAttrs']
   const useBreadcrumbItems: typeof import('../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/useBreadcrumbItems')['useBreadcrumbItems']
+  const useBuildingPrototype: typeof import('../../composables/useBuildingPrototype')['useBuildingPrototype']
   const useConfirm: typeof import('../../node_modules/primevue/useconfirm/index')['useConfirm']
   const useConsentScriptTrigger: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useConsentScriptTrigger']
   const useCookie: typeof import('../../node_modules/nuxt/dist/app/composables/cookie')['useCookie']
@@ -365,6 +366,7 @@ declare module 'vue' {
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/vue')['useAttrs']>
     readonly useBreadcrumbItems: UnwrapRef<typeof import('../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/useBreadcrumbItems')['useBreadcrumbItems']>
+    readonly useBuildingPrototype: UnwrapRef<typeof import('../../composables/useBuildingPrototype')['useBuildingPrototype']>
     readonly useConfirm: UnwrapRef<typeof import('../../node_modules/primevue/useconfirm/index')['useConfirm']>
     readonly useConsentScriptTrigger: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useConsentScriptTrigger']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
@@ -584,6 +586,7 @@ declare module '@vue/runtime-core' {
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/vue')['useAttrs']>
     readonly useBreadcrumbItems: UnwrapRef<typeof import('../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/useBreadcrumbItems')['useBreadcrumbItems']>
+    readonly useBuildingPrototype: UnwrapRef<typeof import('../../composables/useBuildingPrototype')['useBuildingPrototype']>
     readonly useConfirm: UnwrapRef<typeof import('../../node_modules/primevue/useconfirm/index')['useConfirm']>
     readonly useConsentScriptTrigger: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useConsentScriptTrigger']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/cookie')['useCookie']>

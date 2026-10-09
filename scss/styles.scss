@@ -3,9 +3,19 @@
     src: url('public/assets/font/Larsseit-Medium.otf') format('opentype');
 }
 
+:root {
+    color-scheme: only light;
+}
+
 body {
     font-family: 'Larsseit', sans-serif;
     margin:0px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fadein {
+        animation: none !important;
+    }
 }
 
 @keyframes logoPintar {
